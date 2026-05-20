@@ -98,7 +98,7 @@ export default function BirthForm({ onSubmit, loading, initialData, onFormSave, 
 
   const errors = {
     year: !form.year ? '请选择出生年份'
-      : y < 1900 || y > 2026 ? '年份范围：1900–2026'
+      : y < 1900 || y > new Date().getFullYear() ? `年份范围：1900–${new Date().getFullYear()}`
       : '',
     month: !form.month ? '请选择月份' : '',
     day: !form.day ? '请选择日期'
@@ -251,7 +251,7 @@ export default function BirthForm({ onSubmit, loading, initialData, onFormSave, 
               required
             >
               <option value="">年份</option>
-              {Array.from({ length: 127 }, (_, i) => 2026 - i).map(yr => (
+              {Array.from({ length: new Date().getFullYear() - 1899 }, (_, i) => new Date().getFullYear() - i).map(yr => (
                 <option key={yr} value={String(yr)}>{yr}</option>
               ))}
             </select>

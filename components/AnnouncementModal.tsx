@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // 公告版本号——以后想再弹新公告，改这里就行（旧版 key 失效，新版重新弹一次）
-const ANNOUNCEMENT_VERSION = '2026-05-01';
-const STORAGE_KEY = `announcement_seen_${ANNOUNCEMENT_VERSION}`;
+// 设为 null 则禁用公告弹窗
+const ANNOUNCEMENT_VERSION: string | null = null;
+const STORAGE_KEY = ANNOUNCEMENT_VERSION ? `announcement_seen_${ANNOUNCEMENT_VERSION}` : '';
 
 export default function AnnouncementModal() {
   // 默认不开，client 端 useEffect 检查 localStorage 后立即决定是否弹出。
@@ -14,6 +15,7 @@ export default function AnnouncementModal() {
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
+    if (!ANNOUNCEMENT_VERSION) { setDecided(true); return; }
     try {
       const seen = localStorage.getItem(STORAGE_KEY);
       if (!seen) setOpen(true);

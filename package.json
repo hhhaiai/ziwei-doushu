@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/indexnow-ping.mjs",
+    "postbuild": "echo 'postbuild: skipped (script not yet created)'",
     "start": "next start",
     "build:cf": "npx @cloudflare/next-on-pages",
     "preview:cf": "npx wrangler pages dev",
@@ -41,6 +41,6 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "*.{ts,tsx,md,mdx}": "node scripts/zh-punct-lint.mjs --fix"
+    "*.{ts,tsx}": "tsc --noEmit"
   }
 }

@@ -5,7 +5,7 @@
 
 import { astro } from 'iztro';
 import { Solar } from 'lunar-javascript';
-import type { BirthInfo, LunarInfo, Star, Palace, DaXian, DaXianSiHua, ZiweiChart } from './types';
+import type { BirthInfo, LunarInfo, Star, Palace, DaXian, ZiweiChart } from './types';
 import { BRANCHES, STEMS } from './constants';
 // 飞星派工具仅供导出，不再在排盘时调用（倪师《天纪 03》：四化星永远固定不动）
 // import { detectSelfSihua, getSiHuaByStem } from './sihua';
@@ -66,10 +66,15 @@ function parseWuxingJu(name: string): number {
 export function generateChart(birthInfo: BirthInfo): ZiweiChart {
   const { year, month, day, hour, gender } = birthInfo;
 
-  // 调用 iztro 排盘
-  const solarDate = `${year}-${month}-${day}`;
+  // 调用 iztro 排盘（日期补零，防止 iztro 解析异常）
+  const solarDate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
   const iztroGender = gender === 'male' ? '男' : '女';
-  const astrolabe = astro.bySolar(solarDate, hour, iztroGender, true, 'zh-CN');
+  let astrolabe: ReturnType<typeof astro.bySolar>;
+  try {
+    astrolabe = astro.bySolar(solarDate, hour, iztroGender, true, 'zh-CN');
+  } catch (e) {
+    throw new Error(`排盘失败：无效的出生信息 (${solarDate} ${iztroGender} 时辰${hour})。${e instanceof Error ? e.message : ''}`);
+  }
 
   // ── 组装十二宫 ──
   const palaces: Palace[] = astrolabe.palaces.map(p => {
@@ -110,8 +115,12 @@ export function generateChart(birthInfo: BirthInfo): ZiweiChart {
   });
 
   // ── 当前年龄 & 大限 ──
-  const currentYear = new Date().getFullYear();
-  const currentAge  = currentYear - year;
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  // 虚岁计算：过了生日 +1，未过生日也 +1（紫微斗数用虚岁）
+  // 但为了大限匹配准确性，用实岁更稳妥
+  const birthdayPassed = (now.getMonth() + 1 > month) || (now.getMonth() + 1 === month && now.getDate() >= day);
+  const currentAge = currentYear - year + (birthdayPassed ? 1 : 0);
 
   palaces.forEach(p => {
     if (p.daXianAge && currentAge >= p.daXianAge[0] && currentAge <= p.daXianAge[1]) {

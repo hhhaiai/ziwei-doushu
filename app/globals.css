@@ -67,8 +67,8 @@
 
   --tx-0: #e8eef6;
   --tx-1: #dce4f0;
-  --tx-2: #9db0d0;
-  --tx-3: #6a7a96;
+  --tx-2: #b0c4de;
+  --tx-3: #8899b3;
   --tx-inv: #0d0d0b;
   --tx-inv2: rgba(13,13,11,0.65);
 
@@ -77,9 +77,9 @@
   --ac-bg:  rgba(212,168,67,0.10);
   --ac-bdr: rgba(212,168,67,0.25);
 
-  --bdr:      rgba(255,255,255,0.07);
-  --bdr-med:  rgba(255,255,255,0.12);
-  --bdr-heavy:rgba(255,255,255,0.20);
+  --bdr:      rgba(255,255,255,0.10);
+  --bdr-med:  rgba(255,255,255,0.16);
+  --bdr-heavy:rgba(255,255,255,0.25);
 
   --sh-xs: 0 1px 2px rgba(0,0,0,0.3);
   --sh-sm: 0 2px 8px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
@@ -146,6 +146,15 @@ body {
   background: var(--bg-1);
   border: 1px solid var(--bdr);
   border-radius: var(--r-md);
+}
+.card-glass {
+  background: var(--bg-card);
+  border: 1px solid var(--bdr);
+  backdrop-filter: blur(8px);
+}
+.card-inner {
+  background: var(--bg-1);
+  border: 1px solid var(--bdr);
 }
 
 /* 深色区块 */
@@ -421,6 +430,599 @@ body {
   .palace-cell { min-height: 68px !important; padding: 5px 4px !important; }
   .chart-workspace-left { padding: 10px 8px 16px; }
   .chart-topbar { padding: 0 8px; gap: 6px; }
+}
+
+/* ─── TopBar 扩展 ────────────────────────────────────────── */
+.chart-topbar-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+.chart-topbar-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tx-0);
+  letter-spacing: 0.02em;
+}
+.chart-topbar-meta {
+  font-size: 11px;
+  color: var(--tx-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chart-topbar-views {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--bg-1);
+  border: 1px solid var(--bdr);
+  border-radius: var(--r-sm);
+  padding: 3px;
+  margin: 0 auto;
+}
+.chart-topbar-view-btn {
+  padding: 5px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--tx-3);
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+.chart-topbar-view-btn.active {
+  background: var(--bg-card);
+  color: var(--tx-0);
+  font-weight: 500;
+  box-shadow: var(--sh-xs);
+}
+.chart-topbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.chart-topbar-year-picker,
+.chart-topbar-month-picker {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--tx-2);
+}
+.chart-topbar-year-picker button,
+.chart-topbar-month-picker button {
+  background: none;
+  border: 1px solid var(--bdr);
+  border-radius: var(--r-xs);
+  color: var(--tx-3);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: border-color 0.15s;
+}
+.chart-topbar-year-picker button:hover,
+.chart-topbar-month-picker button:hover {
+  border-color: var(--ac-bdr);
+  color: var(--ac);
+}
+.chart-topbar-action {
+  font-size: 11px;
+  color: var(--tx-3);
+  background: none;
+  border: 1px solid var(--bdr);
+  border-radius: var(--r-pill);
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.chart-topbar-action:hover {
+  color: var(--ac);
+  border-color: var(--ac-bdr);
+}
+
+/* ─── ChartBoard ─────────────────────────────────────────── */
+.chart-board {
+  width: 100%;
+}
+.chart-board-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  color: var(--tx-3);
+}
+.chart-board-ju {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ac);
+  padding: 2px 8px;
+  border-radius: var(--r-xs);
+  background: var(--ac-bg);
+  border: 1px solid var(--ac-bdr);
+}
+.chart-board-label {
+  letter-spacing: 0.05em;
+}
+.chart-board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px;
+  aspect-ratio: 1;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* 宫位单元格 */
+.chart-palace {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--bdr);
+  border-radius: var(--r-xs);
+  padding: 6px 5px 5px;
+  min-height: 80px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chart-palace:hover {
+  border-color: var(--ac-bdr);
+  background: var(--ac-bg);
+}
+.chart-palace.ming {
+  border-color: var(--ac-bdr);
+  box-shadow: inset 0 0 0 1px var(--ac-bg);
+}
+.chart-palace.shen {
+  border-style: dashed;
+}
+.chart-palace.current-daxian {
+  background: var(--ac-bg);
+}
+.chart-palace.empty {
+  opacity: 0.85;
+}
+
+/* 宫位头 */
+.chart-palace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+.chart-palace-name {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--tx-1);
+  letter-spacing: 0.03em;
+}
+.chart-palace-branch {
+  font-size: 9px;
+  color: var(--tx-3);
+  font-family: var(--font-mono);
+}
+
+/* 大限 */
+.chart-palace-daxian {
+  font-size: 9px;
+  color: var(--tx-3);
+  font-family: var(--font-mono);
+  margin-bottom: 2px;
+}
+.chart-palace-daxian.active {
+  color: var(--ac);
+  font-weight: 600;
+}
+
+/* 借宫 */
+.chart-palace-borrow {
+  font-size: 9px;
+  color: var(--ac-dim);
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+/* 星曜 */
+.chart-palace-stars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  flex: 1;
+}
+.chart-star {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  cursor: pointer;
+  padding: 1px 3px;
+  border-radius: 3px;
+  transition: background 0.12s;
+}
+.chart-star:hover {
+  background: var(--bg-2);
+}
+.chart-star-name {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--tx-1);
+}
+.chart-star.major .chart-star-name {
+  font-weight: 600;
+  color: var(--tx-0);
+}
+.chart-star.minor .chart-star-name {
+  font-size: 10px;
+  color: var(--tx-2);
+}
+.chart-star.lucky .chart-star-name {
+  font-size: 10px;
+  color: var(--lu);
+}
+.chart-star.sha .chart-star-name {
+  font-size: 10px;
+  color: var(--ji);
+}
+.chart-star-brightness {
+  font-size: 8px;
+  font-family: var(--font-mono);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+.chart-star-brightness.bright { color: var(--lu); }
+.chart-star-brightness.dim { color: var(--ji); }
+.chart-star-sihua {
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: opacity 0.12s;
+}
+.chart-star-sihua:hover { opacity: 0.7; }
+
+/* 自化 */
+.chart-palace-self-sihua {
+  display: flex;
+  gap: 3px;
+  margin-top: 2px;
+  flex-wrap: wrap;
+}
+.chart-self-sihua-badge {
+  font-size: 8px;
+  font-family: var(--font-mono);
+  padding: 0 3px;
+  border-radius: 2px;
+  background: rgba(0,0,0,0.03);
+}
+
+/* 命/身宫标记 */
+.chart-palace-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 8px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+}
+.ming-badge {
+  background: var(--ac);
+  color: white;
+}
+.shen-badge {
+  background: transparent;
+  border: 1px dashed var(--ac);
+  color: var(--ac);
+}
+
+/* 中心 */
+.chart-board-center {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-1);
+  border: 1px solid var(--bdr);
+  border-radius: var(--r-sm);
+  gap: 4px;
+}
+.chart-board-center-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tx-2);
+  letter-spacing: 0.2em;
+}
+.chart-board-center-sub {
+  font-size: 11px;
+  color: var(--ac);
+  font-weight: 500;
+}
+.chart-board-center-year {
+  font-size: 11px;
+  color: var(--tx-3);
+  margin-top: 4px;
+}
+
+/* ─── InsightPanel ───────────────────────────────────────── */
+.insight-panel {
+  padding: 16px 20px;
+}
+.insight-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--bdr);
+}
+.insight-panel-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--tx-0);
+  letter-spacing: 0.03em;
+}
+.insight-panel-close {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: var(--tx-3);
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+.insight-panel-close:hover { color: var(--tx-0); }
+
+/* 概览 */
+.insight-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.insight-overview-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 6px 0;
+}
+.insight-overview-row.highlight {
+  background: var(--ac-bg);
+  border-radius: var(--r-xs);
+  padding: 6px 8px;
+  border: 1px solid var(--ac-bdr);
+}
+.insight-overview-label {
+  color: var(--tx-3);
+}
+.insight-overview-value {
+  color: var(--tx-1);
+  font-weight: 500;
+}
+.insight-overview-sihua {
+  margin-top: 4px;
+}
+
+/* 通用标签 */
+.insight-group-label {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--tx-3);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+.insight-group-stars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* 星曜详情 */
+.insight-star-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.insight-star-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.insight-star-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--tx-0);
+}
+.insight-star-attr {
+  font-size: 11px;
+  color: var(--ac);
+  padding: 1px 6px;
+  border-radius: var(--r-xs);
+  background: var(--ac-bg);
+  border: 1px solid var(--ac-bdr);
+}
+.insight-star-bright {
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+.insight-star-bright.bright { color: var(--lu); background: rgba(45,122,74,0.08); }
+.insight-star-bright.dim { color: var(--ji); background: rgba(168,50,40,0.08); }
+.insight-star-palace {
+  font-size: 12px;
+  color: var(--tx-2);
+}
+.insight-star-sihua {
+  font-size: 12px;
+  font-weight: 500;
+}
+.insight-star-brief {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--tx-2);
+  padding: 8px;
+  background: var(--bg-1);
+  border-radius: var(--r-sm);
+  border: 1px solid var(--bdr);
+}
+
+/* 宫位详情 */
+.insight-palace-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.insight-palace-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.insight-palace-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--tx-0);
+}
+.insight-palace-branch {
+  font-size: 11px;
+  color: var(--tx-3);
+}
+.insight-palace-tag {
+  display: inline-block;
+  font-size: 10px;
+  color: var(--ac);
+  padding: 2px 8px;
+  border-radius: var(--r-xs);
+  background: var(--ac-bg);
+  border: 1px solid var(--ac-bdr);
+  width: fit-content;
+}
+.insight-palace-empty {
+  font-size: 11px;
+  color: var(--tx-3);
+  font-style: italic;
+  padding: 6px 8px;
+  background: var(--bg-1);
+  border-radius: var(--r-xs);
+}
+.insight-star-group {
+  margin-top: 2px;
+}
+.insight-star-chip {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: var(--r-xs);
+  border: 1px solid var(--bdr);
+  background: var(--bg-card);
+}
+.insight-star-chip.major {
+  font-weight: 600;
+  color: var(--tx-0);
+  border-color: var(--ac-bdr);
+}
+.insight-star-chip.minor { color: var(--tx-2); }
+.insight-star-chip.lucky { color: var(--lu); border-color: rgba(45,122,74,0.2); }
+.insight-star-chip.sha { color: var(--ji); border-color: rgba(168,50,40,0.2); }
+.insight-self-sihua { margin-top: 4px; }
+.insight-self-chip {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--bg-2);
+}
+.insight-palace-daxian {
+  font-size: 11px;
+  color: var(--tx-3);
+  padding-top: 4px;
+  border-top: 1px solid var(--bdr);
+}
+.insight-current-tag {
+  color: var(--ac);
+  font-weight: 500;
+}
+
+/* 四化详情 */
+.insight-sihua-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.insight-sihua-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.insight-sihua-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.insight-sihua-empty {
+  font-size: 12px;
+  color: var(--tx-3);
+  font-style: italic;
+}
+.insight-sihua-placements {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.insight-sihua-placement {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 6px 8px;
+  background: var(--bg-1);
+  border-radius: var(--r-xs);
+  border: 1px solid var(--bdr);
+}
+.insight-sihua-star {
+  font-weight: 600;
+  color: var(--tx-0);
+}
+.insight-sihua-arrow {
+  color: var(--tx-3);
+}
+.insight-sihua-palace {
+  color: var(--tx-2);
+}
+.insight-sihua-hint {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+/* 大限四化 */
+.insight-daxian-sihua-chip {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: var(--r-xs);
+  background: var(--bg-1);
+  border: 1px solid var(--bdr);
+  color: var(--tx-1);
 }
 
 /* ─── 打印样式 ───────────────────────────────────────────── */

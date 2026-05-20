@@ -295,7 +295,6 @@ export default function ChartPage() {
                 onStarClick={handleStarClick}
                 onPalaceClick={handlePalaceClick}
                 onSiHuaBadgeClick={handleSiHuaBadgeClick}
-                onTimeViewChange={setView}
               />
 
               {/* 底部操作区 */}
@@ -351,7 +350,7 @@ export default function ChartPage() {
       )}
 
       {/* 分享弹窗（含卡片图 + 下载 + 复制链接）*/}
-      {savedForm && (
+      {savedForm && chart && (
         <ShareModal
           open={shareModalOpen}
           onClose={() => setShareModalOpen(false)}

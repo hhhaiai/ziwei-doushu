@@ -1,6 +1,6 @@
 # 紫微斗数 · 开源排盘引擎
 
-基于**倪海夏《天纪》**教学体系的紫微斗数排盘系统，包含完整排盘算法、四化系统、格局知识库、古籍原文数据，以及 **51.8 万条命盘样本数据**。
+基于**倪海夏《天纪》**教学体系的紫微斗数排盘系统，包含完整排盘算法、四化系统、格局知识库、倪海厦三纪知识库、古籍原文数据，以及 **51.8 万条命盘样本数据**。
 
 线上体验：[wdyziweidoushu666.com](https://wdyziweidoushu666.com)
 
@@ -66,30 +66,74 @@ Expand-Archive combined.zip
 | `sihua.ts` | 四化飞星系统（禄权科忌），含各天干四化对照表 |
 | `patterns.ts` | **1100+ 行格局知识库**：紫府同宫、日月并明、七杀朝斗等经典格局判定规则 |
 | `heming-knowledge.ts` | 合盘方法论：倪师体系下双盘比对逻辑 |
-| `types.ts` | TypeScript 类型定义 |
-| `cities.ts` | 中国城市经纬度，用于真太阳时校正 |
 | `famous.ts` | 历史名人命盘示例数据 |
+| `cities.ts` | 中国城市经纬度，用于真太阳时校正 |
+| `history.ts` | 排盘历史记录 |
+| `share.ts` | 命盘分享功能 |
+| `db-analysis.ts` | 命盘数据库分析模块 |
+| `types.ts` | TypeScript 类型定义 |
+| `lunar-javascript.d.ts` | lunar-javascript 库的类型声明 |
 
 ### 古籍原文（`lib/classics/`）
 
-- **骨髓赋**（`gusuifu.ts`）— 紫微斗数核心歌诀
-- **紫微斗数全集**（`quanji.ts`）— 清代古本
-- **紫微斗数全书**（`quanshu.ts`）— 陈希夷传本
+| 文件 | 说明 |
+|------|------|
+| `data/gusuifu.ts` | **骨髓赋** — 紫微斗数核心歌诀 |
+| `data/quanji.ts` | **紫微斗数全集** — 清代古本 |
+| `data/quanshu.ts` | **紫微斗数全书** — 陈希夷传本 |
+| `index.ts` | 统一查询 API（按 slug 取书、按章节取段、全文搜索） |
+| `types.ts` | 古籍数据类型定义（Book、Chapter、Paragraph、SearchHit） |
 
-### 前端界面（`app/` + `components/`）
+### 倪海厦三纪知识库（`lib/nihai/`）
 
-完整的 Next.js 14 前端，包含：
+基于倪海厦天纪、地纪、人纪教学体系的结构化知识数据。
 
-- 排盘工作台（命盘方格、宫位详情、星曜面板）
-- 合盘分析页
-- 古籍阅读器（全文搜索）
-- 命理百科（14 主星 + 12 宫位知识页）
-- 亮色/暗色主题切换
-- 移动端适配
+| 文件 | 说明 |
+|------|------|
+| `tianji.ts` | **天纪**：紫微斗数、易经 64 卦、堪舆学、推命学、面相学、测字术 |
+| `diji.ts` | **地纪**：国家地理志、风水与国运 |
+| `renji.ts` | **人纪**：针灸大成、黄帝内经、神农本草经、伤寒论、金匮要略（含 215 条经验穴位、31 种透针透穴法、100 汉唐方剂、259 经典经方） |
+| `index.ts` | 统一导出 + 倪海厦完整传记（NI_HAIXIA_BIO） |
+| `types.ts` | 三纪共享类型定义（NiModule、Hexagram、FengShuiEntry、MedicalEntry 等） |
 
 ### SEO 知识图谱（`lib/seo/`）
 
-14 主星 × 12 宫位的结构化知识数据，可用于内容生成或知识库构建。
+| 文件 | 说明 |
+|------|------|
+| `knowledge.ts` | 14 主星 × 12 宫位的结构化知识数据，可用于内容生成或知识库构建 |
+
+### 前端界面（`app/` + `components/`）
+
+完整的 Next.js 15 前端，包含以下页面：
+
+| 路由 | 说明 |
+|------|------|
+| `/` | 首页（命盘输入 + 名人命盘展示） |
+| `/chart` | 排盘工作台（命盘方格、宫位详情、星曜面板） |
+| `/heming` | 合盘分析页 |
+| `/knowledge` | 命理百科（14 主星 × 12 宫位知识页，动态路由 `[star]/[topic]`） |
+| `/library` | 古籍阅读器（全文搜索，动态路由 `[book]/[chapter]`） |
+| `/preview` | 命盘预览页 |
+| `/privacy` | 隐私政策 |
+| `/terms` | 服务条款 |
+
+组件按功能模块组织：
+
+```
+components/
+  chart/          — 排盘工作台（ChartBoard、TopBar）
+  home/           — 首页模块（FamousCharts）
+  insight/        — AI 解读面板（InsightPanel）
+  BirthForm.tsx   — 生辰输入表单
+  ThemeProvider   — 亮色/暗色主题切换
+  ShareCardCanvas — 命盘分享卡片生成
+  ...
+```
+
+其他特性：
+- 亮色/暗色主题切换
+- 移动端适配
+- SEO：`robots.ts` 自动生成 robots.txt，`sitemap.ts` 自动生成 sitemap
 
 ---
 
@@ -98,7 +142,7 @@ Expand-Archive combined.zip
 以下属于平台运营层，不在开源范围内：
 
 - **AI 解读 prompt**：基于倪海夏体系调教的命盘解读提示词
-- **后端 API**：`/api/interpret`、`/api/heming`、`/api/generate` 等路由实现
+- **后端 API**：`/api/interpret`、`/api/heming` 等路由实现（仅开源了 `/api/generate`）
 - **用户系统**：登录、短信验证、会员、支付
 - **服务端安全**：签名校验、防刷、水印
 - **部署配置**：Vercel/Nginx/Docker/数据库
@@ -125,17 +169,50 @@ cp .env.example .env.local
 npm run dev
 ```
 
+### 环境变量
+
+```bash
+# AI 推理（OpenAI 兼容协议，任选一家）
+AI_PROVIDER=deepseek
+DEEPSEEK_API_KEY=your-deepseek-api-key
+
+# 或用其他 OpenAI 兼容模型
+# AI_PROVIDER=mimo
+# MIMO_API_KEY=your-api-key
+# MIMO_BASE_URL=https://your-provider/v1
+# MIMO_MODEL=model-name
+
+# 站点地址
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+### 可用脚本
+
+```bash
+npm run dev          # 启动开发服务器
+npm run build        # 构建生产版本
+npm run start        # 启动生产服务器
+npm run build:cf     # 构建 Cloudflare Pages 版本
+npm run preview:cf   # 本地预览 Cloudflare Pages 版本
+```
+
 > 注意：开源版不含后端 API 路由，AI 解读功能需要你自行实现 `/api/interpret` 等接口。排盘算法和前端界面可独立运行。
 
 ---
 
 ## 技术栈
 
-- **框架**：Next.js 14（App Router）
-- **语言**：TypeScript
-- **样式**：Tailwind CSS + CSS Variables 设计系统
-- **排盘**：基于 [iztro](https://github.com/SylarLong/iztro) + lunar-javascript
-- **动画**：Framer Motion
+- **框架**：Next.js 15（App Router）+ React 19
+- **语言**：TypeScript 5
+- **样式**：Tailwind CSS 3.4 + CSS Variables 设计系统
+- **排盘**：基于 [iztro](https://github.com/SylarLong/iztro) ^2.5.8 + lunar-javascript ^1.7.3
+- **AI**：@anthropic-ai/sdk ^0.27.0（可选，用于 AI 解读）
+- **数据库**：pg ^8.20.0（PostgreSQL）、ioredis ^5.10.1（Redis 缓存）
+- **动画**：Framer Motion ^11.3.0
+- **分享**：html2canvas ^1.4.1（命盘卡片图片生成）
+- **监控**：@vercel/analytics、@vercel/speed-insights
+- **部署**：支持 Vercel 和 Cloudflare Pages（`@cloudflare/next-on-pages`）
+- **Git 规范**：Husky 9 + lint-staged 16（提交前自动 `tsc --noEmit` 类型检查）
 
 ---
 

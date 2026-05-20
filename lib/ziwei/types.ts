@@ -70,9 +70,6 @@ export interface DaXian {
   endAge: number;
   palaceBranch: number;
   palaceName: string;
-  stemIndex?: number;    // 大限宫的天干索引（用于大限四化）
-  stemName?: string;
-  siHua?: DaXianSiHua;   // 该大限四化（基于宫干）
 }
 
 export interface ZiweiChart {

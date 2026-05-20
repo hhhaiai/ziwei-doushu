@@ -1,8 +1,54 @@
+# Dependencies
 node_modules/
+
+# Next.js
 .next/
-.vercel/
-.env*
-!.env.example
+out/
+
+# Build outputs
 dist/
 *.tsbuildinfo
+tsconfig.tsbuildinfo
+
+
+package-lock.json
+
+# Vercel
+.vercel/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Testing
+coverage/
+
+# Misc
+*.zip
+*.tar.gz
+*.tgz
+
+# Samples toolkit (large data)
+ziwei-samples-toolkit/
+ziwei-samples-toolkit-v3-full.zip

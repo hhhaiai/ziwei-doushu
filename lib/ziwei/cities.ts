@@ -257,6 +257,7 @@ export const PROVINCES: ProvinceInfo[] = [
       { name: '信阳', longitude: 114.1 },
       { name: '周口', longitude: 114.7 },
       { name: '驻马店', longitude: 114.0 },
+      { name: '济源', longitude: 112.6 },
     ],
   },
   {
