@@ -7,8 +7,9 @@
     "build": "next build",
     "postbuild": "echo 'postbuild: skipped (script not yet created)'",
     "start": "next start",
-    "build:cf": "npx @cloudflare/next-on-pages",
-    "preview:cf": "npx wrangler pages dev",
+    "build:cf": "opennextjs-cloudflare build",
+    "preview:cf": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy:cf": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "prepare": "husky"
   },
   "dependencies": {
@@ -22,14 +23,14 @@
     "ioredis": "^5.10.1",
     "iztro": "^2.5.8",
     "lunar-javascript": "^1.7.3",
-    "next": "^15.5.15",
+    "next": "15.4.5",
     "pg": "^8.20.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "vercel": "^50.42.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
+    "@opennextjs/cloudflare": "^1.19.11",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

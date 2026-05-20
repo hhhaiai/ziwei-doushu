@@ -16,6 +16,10 @@ package-lock.json
 # Vercel
 .vercel/
 
+# Cloudflare
+.dev.vars
+.open-next/
+
 # Environment variables
 .env
 .env.local
