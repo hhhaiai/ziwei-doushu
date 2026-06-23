@@ -20,6 +20,7 @@ package-lock.json
 # Cloudflare
 .dev.vars
 .open-next/
+.wrangler/
 
 # Environment variables
 .env
