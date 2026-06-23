@@ -41,8 +41,8 @@ export const TOPIC_LABEL: Record<TopicKey, string> = {
 };
 
 export const TOPIC_PALACE_NAME: Record<TopicKey, string> = {
-  overview:    '命',
-  personality: '命',
+  overview:    '命宫',
+  personality: '命宫',
   love:        '夫妻',
   career:      '官禄',
   wealth:      '财帛',
@@ -50,7 +50,7 @@ export const TOPIC_PALACE_NAME: Record<TopicKey, string> = {
   family:      '兄弟',
   children:    '子女',
   move:        '迁移',
-  friends:     '交友',
+  friends:     '仆役',
   home:        '田宅',
   spirit:      '福德',
   parents:     '父母',
