@@ -24,7 +24,7 @@ export function useHistory() {
   const save = useCallback((form: BirthFormState) => {
     const label = [
       form.name,
-      `${form.year}年${form.month}月${form.day}日`,
+      `${form.calendarType === 'lunar' ? '农历' : '公历'}${form.year}年${form.isLeapMonth ? '闰' : ''}${form.month}月${form.day}日`,
       form.city || form.province || '',
       form.gender === 'male' ? '男' : '女',
     ].filter(Boolean).join(' · ');
@@ -42,6 +42,8 @@ export function useHistory() {
         !(e.form.year === form.year &&
           e.form.month === form.month &&
           e.form.day === form.day &&
+          (e.form.calendarType ?? 'solar') === (form.calendarType ?? 'solar') &&
+          !!e.form.isLeapMonth === !!form.isLeapMonth &&
           e.form.gender === form.gender &&
           e.form.clockHour === form.clockHour &&
           e.form.clockMinute === form.clockMinute)

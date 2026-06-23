@@ -1,5 +1,6 @@
 import type { BirthFormState } from '@/components/BirthForm';
 import type { BirthInfo } from './types';
+import { Lunar } from 'lunar-javascript';
 
 /** 根据北京时间 + 经度计算真太阳时时辰支 (0-11) */
 export function calcTrueSolarBranch(clockHour: number, clockMinute: number, longitude: number): number {
@@ -10,6 +11,36 @@ export function calcTrueSolarBranch(clockHour: number, clockMinute: number, long
   return Math.floor((solar - 60) / 120) + 1;
 }
 
+
+export interface NormalizedBirthDate {
+  year: number;
+  month: number;
+  day: number;
+  source: 'solar' | 'lunar';
+}
+
+/** 将表单日期统一转换为公历日期；核心排盘算法只接收公历。 */
+export function normalizeBirthDate(form: BirthFormState): NormalizedBirthDate {
+  const source = form.calendarType === 'lunar' ? 'lunar' : 'solar';
+  const year = parseInt(form.year) || 0;
+  const month = parseInt(form.month) || 0;
+  const day = parseInt(form.day) || 0;
+
+  if (source === 'lunar') {
+    const lunarMonth = form.isLeapMonth ? -month : month;
+    const lunar = Lunar.fromYmd(year, lunarMonth, day);
+    const solar = lunar.getSolar();
+    return {
+      year: solar.getYear(),
+      month: solar.getMonth(),
+      day: solar.getDay(),
+      source,
+    };
+  }
+
+  return { year, month, day, source };
+}
+
 /** BirthFormState → BirthInfo
  *
  * 子时规则（倪海厦体系/三合派标准）：
@@ -18,9 +49,10 @@ export function calcTrueSolarBranch(clockHour: number, clockMinute: number, long
  * 这与「时辰支同为子(0)」并不冲突——子时分早晚两段，需要在日期上区分。
  */
 export function formToBirthInfo(form: BirthFormState): BirthInfo {
-  let y = parseInt(form.year) || 0;
-  let m = parseInt(form.month) || 0;
-  let d = parseInt(form.day) || 0;
+  const normalized = normalizeBirthDate(form);
+  let y = normalized.year;
+  let m = normalized.month;
+  let d = normalized.day;
 
   // 晚子时（23:00-23:59）按次日处理：用 Date 对象自动处理月末/年末进位
   if (!form.unknownTime) {
@@ -54,6 +86,10 @@ export function formToSearchParams(form: BirthFormState): URLSearchParams {
   p.set('y', form.year);
   p.set('m', form.month);
   p.set('d', form.day);
+  if (form.calendarType === 'lunar') {
+    p.set('cal', 'l');
+    if (form.isLeapMonth) p.set('leap', '1');
+  }
   if (form.unknownTime) {
     p.set('u', '1');
   } else {
@@ -78,6 +114,8 @@ export function searchParamsToForm(params: URLSearchParams): Partial<BirthFormSt
     year,
     month,
     day,
+    calendarType: params.get('cal') === 'l' ? 'lunar' : 'solar',
+    isLeapMonth: params.get('leap') === '1',
     unknownTime: params.get('u') === '1',
     clockHour: params.get('h') || '8',
     clockMinute: params.get('mi') || '0',

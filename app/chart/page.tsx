@@ -43,6 +43,7 @@ export default function ChartPage() {
     if (!formData?.year) return;
     const fullForm: BirthFormState = {
       name: '', year: '', month: '', day: '',
+      calendarType: 'solar', isLeapMonth: false,
       clockHour: '8', clockMinute: '0', unknownTime: false,
       province: '', city: '', longitude: 120, gender: 'male',
       ...formData,
