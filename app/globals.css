@@ -593,6 +593,10 @@ body {
 .chart-palace.current-daxian {
   background: var(--ac-bg);
 }
+.chart-palace.time-active {
+  border-color: color-mix(in srgb, var(--ac) 70%, var(--bdr));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ac) 25%, transparent);
+}
 .chart-palace.empty {
   opacity: 0.85;
 }
@@ -692,6 +696,11 @@ body {
   border-radius: 2px;
   transition: opacity 0.12s;
 }
+.chart-star-sihua.time-layer {
+  font-size: 9px;
+  border: 1px solid currentColor;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
 .chart-star-sihua:hover { opacity: 0.7; }
 
 /* 自化 */
@@ -732,6 +741,13 @@ body {
   border: 1px dashed var(--ac);
   color: var(--ac);
 }
+.time-badge {
+  left: 2px;
+  right: auto;
+  background: color-mix(in srgb, var(--ac) 18%, var(--bg-card));
+  border: 1px solid var(--ac-bdr);
+  color: var(--ac);
+}
 
 /* 中心 */
 .chart-board-center {
@@ -765,7 +781,9 @@ body {
 
 /* ─── InsightPanel ───────────────────────────────────────── */
 .insight-panel {
-  padding: 16px 20px;
+  padding: 18px 20px;
+  background: color-mix(in srgb, var(--bg-card) 96%, var(--bg-0));
+  border-top: 1px solid var(--bdr-med);
 }
 .insight-panel-header {
   display: flex;
@@ -776,8 +794,8 @@ body {
   border-bottom: 1px solid var(--bdr);
 }
 .insight-panel-title {
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--tx-0);
   letter-spacing: 0.03em;
 }
@@ -803,8 +821,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
-  padding: 6px 0;
+  font-size: 13px;
+  padding: 8px 0;
 }
 .insight-overview-row.highlight {
   background: var(--ac-bg);
@@ -813,11 +831,12 @@ body {
   border: 1px solid var(--ac-bdr);
 }
 .insight-overview-label {
-  color: var(--tx-3);
+  color: var(--tx-2);
+  font-weight: 600;
 }
 .insight-overview-value {
-  color: var(--tx-1);
-  font-weight: 500;
+  color: var(--tx-0);
+  font-weight: 700;
 }
 .insight-overview-sihua {
   margin-top: 4px;
@@ -825,9 +844,10 @@ body {
 
 /* 通用标签 */
 .insight-group-label {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
-  color: var(--tx-3);
+  color: var(--tx-2);
+  font-weight: 700;
   text-transform: uppercase;
   display: block;
   margin-bottom: 4px;
@@ -878,13 +898,13 @@ body {
   font-weight: 500;
 }
 .insight-star-brief {
-  font-size: 12px;
-  line-height: 1.7;
-  color: var(--tx-2);
-  padding: 8px;
-  background: var(--bg-1);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--tx-1);
+  padding: 10px 12px;
+  background: color-mix(in srgb, var(--bg-card) 96%, var(--bg-0));
   border-radius: var(--r-sm);
-  border: 1px solid var(--bdr);
+  border: 1px solid var(--bdr-med);
 }
 
 /* 宫位详情 */
@@ -918,11 +938,11 @@ body {
   width: fit-content;
 }
 .insight-palace-empty {
-  font-size: 11px;
-  color: var(--tx-3);
-  font-style: italic;
-  padding: 6px 8px;
-  background: var(--bg-1);
+  font-size: 12px;
+  color: var(--tx-2);
+  padding: 7px 9px;
+  background: color-mix(in srgb, var(--bg-card) 96%, var(--bg-0));
+  border: 1px solid var(--bdr-med);
   border-radius: var(--r-xs);
 }
 .insight-star-group {
@@ -930,8 +950,8 @@ body {
 }
 .insight-star-chip {
   display: inline-block;
-  font-size: 11px;
-  padding: 2px 8px;
+  font-size: 12px;
+  padding: 3px 9px;
   border-radius: var(--r-xs);
   border: 1px solid var(--bdr);
   background: var(--bg-card);

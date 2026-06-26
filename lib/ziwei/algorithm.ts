@@ -52,6 +52,12 @@ function mapStarType(starName: string, iztroType: string): Star['type'] {
   return 'minor';
 }
 
+function normalizeSiHua(mutagen: unknown): Star['siHua'] | undefined {
+  return mutagen === '禄' || mutagen === '权' || mutagen === '科' || mutagen === '忌'
+    ? mutagen
+    : undefined;
+}
+
 // ─── 五行局名称 → 数字 ──────────────────────────────────────────
 function parseWuxingJu(name: string): number {
   if (name.includes('二')) return 2;
@@ -87,17 +93,17 @@ export function generateChart(birthInfo: BirthInfo): ZiweiChart {
         name:       s.name as string,
         type:       'major' as const,
         brightness: mapBrightness(s.brightness as string),
-        siHua:      s.mutagen as Star['siHua'],
+        siHua:      normalizeSiHua(s.mutagen),
       })),
       ...(p.minorStars ?? []).map(s => ({
         name:  s.name as string,
         type:  mapStarType(s.name as string, s.type as string),
-        siHua: s.mutagen as Star['siHua'],
+        siHua: normalizeSiHua(s.mutagen),
       })),
       ...(p.adjectiveStars ?? []).map(s => ({
         name:  s.name as string,
         type:  'minor' as const,
-        siHua: s.mutagen as Star['siHua'],
+        siHua: normalizeSiHua(s.mutagen),
       })),
     ];
 

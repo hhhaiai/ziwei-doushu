@@ -1,11 +1,13 @@
 'use client';
 import type { ZiweiChart, Star, Palace } from '@/lib/ziwei/types';
+import { getTimeLayerInfo } from '@/lib/ziwei/time-view';
 import type { TimeView } from './TopBar';
 
 interface ChartBoardProps {
   chart: ZiweiChart;
   view: TimeView;
   liunianYear: number;
+  liuyueMonth: number;
   onStarClick: (star: Star, palace: Palace) => void;
   onPalaceClick: (palace: Palace) => void;
   onSiHuaBadgeClick: (starName: string, siHua: string) => void;
@@ -51,10 +53,11 @@ function getPalaceByBranch(palaces: Palace[], branch: number): Palace | undefine
 }
 
 export default function ChartBoard({
-  chart, view, liunianYear,
+  chart, view, liunianYear, liuyueMonth,
   onStarClick, onPalaceClick, onSiHuaBadgeClick,
 }: ChartBoardProps) {
   const { palaces, daXians, currentDaXianIndex, wuxingJuName, mingGongBranch, shenGongBranch } = chart;
+  const timeLayer = getTimeLayerInfo(view, liunianYear, liuyueMonth);
 
   return (
     <div className="chart-board">
@@ -74,6 +77,7 @@ export default function ChartBoard({
           const pos = PALACE_GRID_POSITIONS[branch];
           const isMing = branch === mingGongBranch;
           const isShen = branch === shenGongBranch;
+          const isTimeActive = timeLayer?.activeBranch === branch;
           const daXian = daXians.find(d => d.palaceBranch === branch);
           const isCurrentDaXian = daXian != null && currentDaXianIndex >= 0
             && daXians[currentDaXianIndex] === daXian;
@@ -81,7 +85,7 @@ export default function ChartBoard({
           return (
             <div
               key={branch}
-              className={`chart-palace${isMing ? ' ming' : ''}${isShen ? ' shen' : ''}${isCurrentDaXian ? ' current-daxian' : ''}${palace.isEmpty ? ' empty' : ''}`}
+              className={`chart-palace${isMing ? ' ming' : ''}${isShen ? ' shen' : ''}${isCurrentDaXian ? ' current-daxian' : ''}${isTimeActive ? ' time-active' : ''}${palace.isEmpty ? ' empty' : ''}`}
               style={{ gridRow: pos.row + 1, gridColumn: pos.col + 1 }}
               onClick={() => onPalaceClick(palace)}
             >
@@ -107,29 +111,33 @@ export default function ChartBoard({
 
               {/* 星曜列表 */}
               <div className="chart-palace-stars">
-                {palace.stars.map((star, i) => (
-                  <div
-                    key={`${star.name}-${i}`}
-                    className={`chart-star ${star.type}${star.siHua ? ' has-sihua' : ''}`}
-                    onClick={e => { e.stopPropagation(); onStarClick(star, palace); }}
-                  >
-                    <span className="chart-star-name">{star.name}</span>
-                    {star.brightness && star.brightness !== 'normal' && (
-                      <span className={`chart-star-brightness ${star.brightness}`}>
-                        {BRIGHTNESS_LABELS[star.brightness]}
-                      </span>
-                    )}
-                    {star.siHua && (
-                      <span
-                        className="chart-star-sihua"
-                        style={{ color: SIHUA_COLORS[star.siHua] }}
-                        onClick={e => { e.stopPropagation(); onSiHuaBadgeClick(star.name, star.siHua!); }}
-                      >
-                        {star.siHua}
-                      </span>
-                    )}
-                  </div>
-                ))}
+                {palace.stars.map((star, i) => {
+                  const viewSiHua = timeLayer ? timeLayer.starSiHuaMap[star.name] : star.siHua;
+                  return (
+                    <div
+                      key={`${star.name}-${i}`}
+                      className={`chart-star ${star.type}${viewSiHua ? ' has-sihua' : ''}`}
+                      onClick={e => { e.stopPropagation(); onStarClick(star, palace); }}
+                    >
+                      <span className="chart-star-name">{star.name}</span>
+                      {star.brightness && star.brightness !== 'normal' && (
+                        <span className={`chart-star-brightness ${star.brightness}`}>
+                          {BRIGHTNESS_LABELS[star.brightness]}
+                        </span>
+                      )}
+                      {viewSiHua && (
+                        <span
+                          className={`chart-star-sihua${timeLayer ? ' time-layer' : ''}`}
+                          style={{ color: SIHUA_COLORS[viewSiHua] }}
+                          title={timeLayer ? `${timeLayer.label}：${star.name}化${viewSiHua}` : `${star.name}化${viewSiHua}`}
+                          onClick={e => { e.stopPropagation(); onSiHuaBadgeClick(star.name, viewSiHua); }}
+                        >
+                          {timeLayer ? `${timeLayer.badgePrefix}${viewSiHua}` : viewSiHua}
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
 
               {/* 宫干自化 */}
@@ -146,6 +154,7 @@ export default function ChartBoard({
               {/* 命宫/身宫标记 */}
               {isMing && <span className="chart-palace-badge ming-badge">命</span>}
               {isShen && <span className="chart-palace-badge shen-badge">身</span>}
+              {timeLayer && isTimeActive && <span className="chart-palace-badge time-badge">{timeLayer.badgePrefix}</span>}
             </div>
           );
         })}
@@ -154,8 +163,12 @@ export default function ChartBoard({
         <div className="chart-board-center">
           <div className="chart-board-center-title">紫微斗数</div>
           <div className="chart-board-center-sub">{wuxingJuName}</div>
-          {view === 'liunian' && (
-            <div className="chart-board-center-year">{liunianYear} 流年</div>
+          {timeLayer && (
+            <div className="chart-board-center-year">
+              {timeLayer.centerLabel} · {timeLayer.activeBranchLabel}宫
+              <br />
+              {timeLayer.summary}
+            </div>
           )}
         </div>
       </div>

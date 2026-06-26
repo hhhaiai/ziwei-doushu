@@ -6,6 +6,7 @@ import TopBar, { type TimeView } from '@/components/chart/TopBar';
 import ChartBoard from '@/components/chart/ChartBoard';
 import InsightPanel, { type FocusState } from '@/components/insight/InsightPanel';
 import PatternsCard from '@/components/PatternsCard';
+import ZiweiAiChat from '@/components/ai/ZiweiAiChat';
 import FamousPersonCard from '@/components/FamousPersonCard';
 import ShareModal from '@/components/ShareModal';
 import { FAMOUS_PERSONS } from '@/lib/ziwei/famous';
@@ -293,6 +294,7 @@ export default function ChartPage() {
                 chart={chart}
                 view={view}
                 liunianYear={liunianYear}
+                liuyueMonth={liuyueMonth}
                 onStarClick={handleStarClick}
                 onPalaceClick={handlePalaceClick}
                 onSiHuaBadgeClick={handleSiHuaBadgeClick}
@@ -335,7 +337,13 @@ export default function ChartPage() {
                 );
                 return famous ? <FamousPersonCard person={famous} /> : null;
               })()}
-              <PatternsCard chart={chart} />
+              <PatternsCard
+                chart={chart}
+                view={view}
+                liunianYear={liunianYear}
+                liuyueMonth={liuyueMonth}
+              />
+              <ZiweiAiChat chart={chart} />
               <InsightPanel
                 chart={chart}
                 view={view}

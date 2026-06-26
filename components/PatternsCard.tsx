@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import type { ZiweiChart } from '@/lib/ziwei/types';
 import { detectPatterns } from '@/lib/ziwei/patterns';
+import { applyTimeLayerSiHua, getTimeLayerInfo } from '@/lib/ziwei/time-view';
+import type { TimeView } from '@/components/chart/TopBar';
 
 const LevelStyle = {
   excellent: { dot: 'bg-amber-400', label: 'text-amber-500', badge: 'text-amber-500 bg-amber-500/10 border-amber-500/25' },
@@ -10,8 +12,17 @@ const LevelStyle = {
   caution:   { dot: 'bg-orange-500', label: 'text-orange-500', badge: 'text-orange-500 bg-orange-500/10 border-orange-500/25' },
 };
 
-export default function PatternsCard({ chart }: { chart: ZiweiChart }) {
-  const patterns = detectPatterns(chart);
+interface PatternsCardProps {
+  chart: ZiweiChart;
+  view: TimeView;
+  liunianYear: number;
+  liuyueMonth: number;
+}
+
+export default function PatternsCard({ chart, view, liunianYear, liuyueMonth }: PatternsCardProps) {
+  const timeLayer = getTimeLayerInfo(view, liunianYear, liuyueMonth);
+  const patternChart = applyTimeLayerSiHua(chart, timeLayer);
+  const patterns = detectPatterns(patternChart);
   if (patterns.length === 0) return null;
 
   return (
@@ -20,11 +31,20 @@ export default function PatternsCard({ chart }: { chart: ZiweiChart }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
       className="card-glass rounded-xl p-4 mb-4"
+      style={{
+        borderColor: 'var(--bdr-med)',
+        background: 'color-mix(in srgb, var(--bg-card) 96%, var(--bg-0))',
+      }}
     >
-      <div className="text-[10px] tracking-widest mb-3 flex items-center gap-2" style={{ color: 'var(--tx-3)' }}>
-        <span style={{ color: 'var(--ac)', opacity: 0.6 }}>◉</span>
-        格局识别（严格古书条件）
-        <span className="text-[9px] ml-auto" style={{ color: 'var(--tx-3)', opacity: 0.75 }}>{patterns.length}个</span>
+      <div className="text-[11px] tracking-widest mb-3 flex items-center gap-2" style={{ color: 'var(--tx-1)', fontWeight: 700 }}>
+        <span style={{ color: 'var(--ac)', opacity: 0.8 }}>◉</span>
+        {timeLayer ? `${timeLayer.label}格局识别` : '格局识别'}
+        <span className="text-[10px] ml-auto" style={{ color: 'var(--ac)', opacity: 0.9 }}>{patterns.length}个</span>
+      </div>
+      <div style={{ fontSize: '12px', lineHeight: 1.75, color: 'var(--tx-2)', marginBottom: '12px' }}>
+        {timeLayer
+          ? `${timeLayer.summary}。结构类格局仍来自本命盘，四化触发类格局会随流年/流月重算。`
+          : '这里是古书格局的结构化识别：先看名称和白话说明，条件与出处作为专业依据参考。'}
       </div>
       <div className="space-y-2">
         {patterns.map((p, i) => {
@@ -36,12 +56,16 @@ export default function PatternsCard({ chart }: { chart: ZiweiChart }) {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.04 }}
               className="card-inner rounded-lg p-3"
+              style={{
+                borderColor: 'var(--bdr-med)',
+                background: 'color-mix(in srgb, var(--bg-card) 98%, var(--bg-0))',
+              }}
             >
               <div className="flex items-center gap-2 mb-1.5">
                 <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${st.dot}`} />
-                <span className={`text-[11px] font-medium ${st.label}`}>{p.name}</span>
+                <span className={`text-[13px] font-semibold ${st.label}`}>{p.name}</span>
                 <div className="flex gap-1 ml-auto">
-                  {p.palaces.slice(0, 2).map(pa => (
+                  {[...new Set(p.palaces)].slice(0, 2).map(pa => (
                     <span key={pa} className={`text-[8px] px-1.5 py-px rounded-full border ${st.badge}`}>
                       {pa.replace('宫', '')}
                     </span>
@@ -49,28 +73,28 @@ export default function PatternsCard({ chart }: { chart: ZiweiChart }) {
                 </div>
               </div>
 
-              <p className="text-[10px] leading-relaxed pl-3.5" style={{ color: 'var(--tx-2)' }}>
+              <p className="text-[13px] leading-relaxed pl-3.5" style={{ color: 'var(--tx-1)', lineHeight: 1.75 }}>
                 {p.description}
               </p>
 
               {p.conditions && (
                 <div className="mt-2 pl-3.5 space-y-0.5">
                   {p.conditions.required.length > 0 && (
-                    <div className="text-[9px] leading-relaxed" style={{ color: 'var(--tx-2)', opacity: 0.85 }}>
+                    <div className="text-[11px] leading-relaxed" style={{ color: 'var(--tx-1)', opacity: 0.95 }}>
                       <span className="font-medium" style={{ color: 'var(--ac)' }}>必须</span>
                       <span style={{ opacity: 0.6 }}> · </span>
                       {p.conditions.required.join('、')}
                     </div>
                   )}
                   {p.conditions.bonus && p.conditions.bonus.length > 0 && (
-                    <div className="text-[9px] leading-relaxed" style={{ color: 'var(--tx-2)', opacity: 0.85 }}>
+                    <div className="text-[11px] leading-relaxed" style={{ color: 'var(--tx-1)', opacity: 0.95 }}>
                       <span className="font-medium text-emerald-500">加分</span>
                       <span style={{ opacity: 0.6 }}> · </span>
                       {p.conditions.bonus.join('、')}
                     </div>
                   )}
                   {p.conditions.breaking && p.conditions.breaking.length > 0 && (
-                    <div className="text-[9px] leading-relaxed" style={{ color: 'var(--tx-2)', opacity: 0.85 }}>
+                    <div className="text-[11px] leading-relaxed" style={{ color: 'var(--tx-1)', opacity: 0.95 }}>
                       <span className="font-medium text-orange-500">破格</span>
                       <span style={{ opacity: 0.6 }}> · </span>
                       {p.conditions.breaking.join('、')}
@@ -80,7 +104,7 @@ export default function PatternsCard({ chart }: { chart: ZiweiChart }) {
               )}
 
               {p.source && (
-                <div className="text-[9px] mt-1.5 pl-3.5" style={{ color: 'var(--tx-3)', opacity: 0.5 }}>
+                <div className="text-[10px] mt-2 pl-3.5" style={{ color: 'var(--tx-2)', opacity: 0.85 }}>
                   出处 · {p.source}
                 </div>
               )}
