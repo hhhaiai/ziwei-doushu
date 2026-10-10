@@ -11,9 +11,6 @@ dist/
 *.tsbuildinfo
 tsconfig.tsbuildinfo
 
-
-package-lock.json
-
 # Vercel
 .vercel/
 
