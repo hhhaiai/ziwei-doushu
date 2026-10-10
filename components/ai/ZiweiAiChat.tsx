@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import type { DaXian, Palace, Star, ZiweiChart } from '@/lib/ziwei/types';
 import AiContent from './AiContent';
 
@@ -284,6 +285,11 @@ export default function ZiweiAiChat({ chart }: ZiweiAiChatProps) {
           />
           <div style={{ fontSize: '11px', color: 'var(--tx-3)', lineHeight: 1.6 }}>
             模型需要当前 OpenAI-compatible 服务商支持；如需新增模型，可在服务端 `AI_ALLOWED_MODELS` 中配置。
+          </div>
+          <div style={{ fontSize: '11px', lineHeight: 1.6 }}>
+            <Link href="/settings" style={{ color: 'var(--ac)' }}>
+              服务商 / 接口地址 / API Key 设置 →
+            </Link>
           </div>
         </div>
       </details>

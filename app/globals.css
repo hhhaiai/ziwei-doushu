@@ -1056,3 +1056,62 @@ body {
    select 本身是半透明底 + 浅色字，Windows 上原生下拉列表是白底，浅灰字配白底看不清（#14） */
 [data-theme="dark"] select { color-scheme: dark; }
 [data-theme="dark"] select option { background-color: var(--bg-2); color: var(--tx-1); }
+
+/* ─── 全局 AI 设置入口（右下角浮动）────────────────────────
+   挂在 app/layout.tsx，所有页面可见。运维性质的入口，默认只显示齿轮图标，
+   悬停才横向展开文字——占地小、不抢营销页面的视觉焦点。
+   注意不要用 opacity 做「低调」效果：那会让底下的正文透过来，很难看，
+   降低视觉重量靠尺寸和弱化的颜色就够了。 */
+.settings-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  padding: 0 11px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--bdr);
+  background: var(--bg-card);
+  color: var(--tx-3);
+  text-decoration: none;
+  box-shadow: var(--sh-sm);
+  transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.settings-fab svg { flex-shrink: 0; }
+
+.settings-fab span {
+  max-width: 0;
+  margin-left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  transition: max-width 0.22s ease, margin-left 0.22s ease, opacity 0.18s ease;
+}
+
+.settings-fab:hover {
+  color: var(--ac);
+  border-color: var(--ac-bdr);
+  box-shadow: var(--sh-md);
+}
+
+.settings-fab:hover span,
+.settings-fab:focus-visible span {
+  max-width: 70px;
+  margin-left: 6px;
+  opacity: 1;
+}
+
+/* 触屏设备没有 hover，文字直接常显，否则入口看起来只是个无意义的齿轮 */
+@media (hover: none) {
+  .settings-fab span { max-width: 70px; margin-left: 6px; opacity: 1; }
+}
+
+@media print {
+  .settings-fab { display: none; }
+}

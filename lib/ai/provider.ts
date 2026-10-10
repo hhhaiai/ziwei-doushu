@@ -1,5 +1,6 @@
 import 'server-only';
 
+import { getProviderOverride } from './runtime-config';
 import {
   AiConfigurationError,
   AiProviderError,
@@ -28,38 +29,68 @@ interface OpenAiDeltaChunk {
 const DEFAULT_DEEPSEEK_BASE_URL = 'https://api.deepseek.com/v1';
 const DEFAULT_DEEPSEEK_MODEL = 'deepseek-chat';
 
-function requireEnv(name: string): string {
-  const value = process.env[name];
-  if (!value) {
-    throw new AiConfigurationError(`${name} 未配置`);
-  }
-  return value;
-}
-
 function trimTrailingSlash(value: string): string {
   return value.replace(/\/+$/, '');
 }
 
-function getProviderConfig(): OpenAiCompatibleConfig {
-  const provider = (process.env.AI_PROVIDER ?? 'deepseek').toLowerCase();
-
+/**
+ * 读取环境变量里的服务商配置。
+ * 这里**不**校验字段是否齐全：运行时的覆盖（/settings）可能补上 env 缺失的值，
+ * 缺什么由 collectProviderConfig 统一收口。
+ */
+function readEnvConfig(provider: string): Partial<OpenAiCompatibleConfig> {
   if (provider === 'deepseek') {
     return {
-      apiKey: requireEnv('DEEPSEEK_API_KEY'),
-      baseUrl: trimTrailingSlash(process.env.DEEPSEEK_BASE_URL ?? DEFAULT_DEEPSEEK_BASE_URL),
+      apiKey: process.env.DEEPSEEK_API_KEY,
+      baseUrl: process.env.DEEPSEEK_BASE_URL ?? DEFAULT_DEEPSEEK_BASE_URL,
       model: process.env.DEEPSEEK_MODEL ?? DEFAULT_DEEPSEEK_MODEL,
     };
   }
 
   if (provider === 'mimo') {
     return {
-      apiKey: requireEnv('MIMO_API_KEY'),
-      baseUrl: trimTrailingSlash(requireEnv('MIMO_BASE_URL')),
-      model: requireEnv('MIMO_MODEL'),
+      apiKey: process.env.MIMO_API_KEY,
+      baseUrl: process.env.MIMO_BASE_URL,
+      model: process.env.MIMO_MODEL,
     };
   }
 
   throw new AiConfigurationError(`不支持的 AI_PROVIDER：${provider}`);
+}
+
+export interface CollectedProviderConfig {
+  provider: string;
+  apiKey: string;
+  baseUrl: string;
+  model: string;
+}
+
+/**
+ * 合并「运行时覆盖 > 环境变量」，不做完整性校验。
+ * /api/settings 用它来展示当前生效配置（key 由调用方掩码后再出网）。
+ */
+export function collectProviderConfig(): CollectedProviderConfig {
+  const override = getProviderOverride();
+  const provider = (override?.provider ?? process.env.AI_PROVIDER ?? 'deepseek').toLowerCase();
+  const env = readEnvConfig(provider);
+
+  return {
+    provider,
+    apiKey: override?.apiKey ?? env.apiKey ?? '',
+    baseUrl: trimTrailingSlash(override?.baseUrl ?? env.baseUrl ?? ''),
+    model: override?.model ?? env.model ?? '',
+  };
+}
+
+function getProviderConfig(): OpenAiCompatibleConfig {
+  const { provider, apiKey, baseUrl, model } = collectProviderConfig();
+  const prefix = provider.toUpperCase();
+
+  if (!apiKey) throw new AiConfigurationError(`${prefix}_API_KEY 未配置`);
+  if (!baseUrl) throw new AiConfigurationError(`${prefix}_BASE_URL 未配置`);
+  if (!model) throw new AiConfigurationError(`${prefix}_MODEL 未配置`);
+
+  return { apiKey, baseUrl, model };
 }
 
 function toProviderMessages(messages: AiMessage[]): Array<{ role: string; content: string }> {
