@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/nihaixia/source.schema.json",
+  "title": "NihaixiaSource",
+  "type": "object",
+  "required": [
+    "source_id",
+    "title",
+    "url",
+    "platform",
+    "media_type",
+    "topic_tags",
+    "rights_status",
+    "storage_policy",
+    "collection_actions",
+    "human_review_status",
+    "risk_level",
+    "discovered_at"
+  ],
+  "properties": {
+    "source_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "url": { "type": "string", "format": "uri" },
+    "platform": { "type": "string" },
+    "media_type": {
+      "type": "string",
+      "enum": ["webpage", "article", "video", "audio", "pdf", "book", "course", "archive", "official_policy", "unknown"]
+    },
+    "topic_tags": { "type": "array", "items": { "type": "string" } },
+    "rights_status": {
+      "type": "string",
+      "enum": ["authorized_fulltext", "public_domain", "open_license", "metadata_only", "unknown_needs_review", "prohibited"]
+    },
+    "storage_policy": {
+      "type": "string",
+      "enum": ["fulltext_allowed", "metadata_only", "private_user_scope_only", "do_not_store"]
+    },
+    "collection_actions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "record_metadata",
+          "fetch_public_page_title",
+          "manual_rights_review",
+          "request_license",
+          "do_not_download_media",
+          "do_not_store_fulltext",
+          "eligible_for_fulltext_ingest",
+          "needs_human_transcription_permission"
+        ]
+      }
+    },
+    "human_review_status": {
+      "type": "string",
+      "enum": ["pending", "approved", "rejected", "needs_license", "needs_expert_review"]
+    },
+    "risk_level": { "type": "string", "enum": ["low", "medium", "high", "blocked"] },
+    "publisher": { "type": "string" },
+    "author_or_speaker": { "type": "string" },
+    "published_at": { "type": "string" },
+    "discovered_at": { "type": "string" },
+    "discovered_via": { "type": "string" },
+    "notes": { "type": "string" },
+    "fetch_status": { "type": "number" },
+    "fetched_title": { "type": "string" },
+    "content_type": { "type": "string" },
+    "checked_at": { "type": "string" }
+  },
+  "additionalProperties": false
+}
+

@@ -1,0 +1,110 @@
+{
+  "version": "2026-04-24.1",
+  "generated_at": "2026-04-24",
+  "claims": [
+    {
+      "claim_id": "rule-daxian-sihua-palace-stem",
+      "claim": "大限四化必须按大限宫的宫干查四化表，不得按本命年干。",
+      "claim_type": "algorithm_constraint",
+      "implementation_status": "implemented_and_validated",
+      "primary_sources": [
+        { "source_id": "internal-nihaixia-constraints", "role": "authorized_rule_source", "path": "倪海厦体系约束.md", "notes": "硬约束 C-13" },
+        { "source_id": "local-code-algorithm", "role": "implementation", "path": "lib/ziwei/algorithm.ts" },
+        { "source_id": "local-code-sihua", "role": "implementation", "path": "lib/ziwei/sihua.ts" },
+        { "source_id": "local-audit-full-samples", "role": "validation_report", "path": "full-samples-audit-report.txt" }
+      ],
+      "candidate_external_sources": [
+        { "source_id": "nhx-nihaixiahope-tianji-1495", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" },
+        { "source_id": "nhx-finalhopes-ziweidoushu-03", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" }
+      ],
+      "verification_commands": ["npm run validate:nihaixia", "npm run audit:samples"],
+      "notes": "外部候选只作为目录线索；当前可执行证据来自内部授权约束、代码和全量样本审计。"
+    },
+    {
+      "claim_id": "rule-flow-month-five-tiger",
+      "claim": "流月四化必须用五虎遁推月柱天干，再查四化表。",
+      "claim_type": "algorithm_constraint",
+      "implementation_status": "implemented_and_validated",
+      "primary_sources": [
+        { "source_id": "internal-nihaixia-constraints", "role": "authorized_rule_source", "path": "倪海厦体系约束.md", "notes": "硬约束 C-15" },
+        { "source_id": "local-code-sihua", "role": "implementation", "path": "lib/ziwei/sihua.ts" },
+        { "source_id": "local-code-algorithm", "role": "implementation", "path": "lib/ziwei/algorithm.ts" }
+      ],
+      "candidate_external_sources": [
+        { "source_id": "nhx-finalhopes-blog-690", "role": "study_note_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" }
+      ],
+      "verification_commands": ["npm run validate:nihaixia"],
+      "notes": "五虎遁属于硬算法约束，必须以代码和样本验证为准。"
+    },
+    {
+      "claim_id": "rule-self-sihua-and-laiyin",
+      "claim": "宫干自化和来因宫必须保留，尤其化忌来因宫用于追溯问题根源。",
+      "claim_type": "flying_star_constraint",
+      "implementation_status": "implemented_and_validated",
+      "primary_sources": [
+        { "source_id": "internal-nihaixia-constraints", "role": "authorized_rule_source", "path": "倪海厦体系约束.md", "notes": "硬约束 D-17/D-18" },
+        { "source_id": "local-code-algorithm", "role": "implementation", "path": "lib/ziwei/algorithm.ts" },
+        { "source_id": "local-code-types", "role": "schema", "path": "lib/ziwei/types.ts" }
+      ],
+      "candidate_external_sources": [
+        { "source_id": "nhx-nihaixiahope-tianji-1495", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" },
+        { "source_id": "nhx-finalhopes-ziweidoushu-03", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" }
+      ],
+      "verification_commands": ["npm run validate:nihaixia", "npm run audit:samples"],
+      "notes": "样本审计覆盖 selfSihua 存在比例和来因宫字段保留。"
+    },
+    {
+      "claim_id": "rule-health-ziwu-liuzhu",
+      "claim": "疾厄话题必须输出子午流注脏腑、经络、旺时映射。",
+      "claim_type": "health_mapping_constraint",
+      "implementation_status": "implemented_and_validated",
+      "primary_sources": [
+        { "source_id": "internal-nihaixia-constraints", "role": "authorized_rule_source", "path": "倪海厦体系约束.md", "notes": "硬约束 F" },
+        { "source_id": "local-code-db-analysis", "role": "knowledge_source", "path": "lib/ziwei/db-analysis.ts" },
+        { "source_id": "local-audit-full-samples", "role": "validation_report", "path": "full-samples-audit-report.txt" }
+      ],
+      "candidate_external_sources": [
+        { "source_id": "nhx-csdn-tianji-doushu-intro", "role": "study_note_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" }
+      ],
+      "verification_commands": ["npm run validate:nihaixia", "npm run audit:samples"],
+      "notes": "全量样本审计已确认 health 含子午流注/经络。"
+    },
+    {
+      "claim_id": "rule-22-patterns-complete",
+      "claim": "格局层 22 个格局清单不得缺漏。",
+      "claim_type": "pattern_constraint",
+      "implementation_status": "implemented_and_validated",
+      "primary_sources": [
+        { "source_id": "internal-nihaixia-constraints", "role": "authorized_rule_source", "path": "倪海厦体系约束.md", "notes": "硬约束 E" },
+        { "source_id": "local-code-patterns", "role": "implementation", "path": "lib/ziwei/patterns.ts" },
+        { "source_id": "local-code-db-analysis", "role": "knowledge_source", "path": "lib/ziwei/db-analysis.ts" }
+      ],
+      "candidate_external_sources": [
+        { "source_id": "nhx-nihaixiahope-tianji-1502", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" },
+        { "source_id": "nhx-finalhopes-ziweidoushu-10", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" },
+        { "source_id": "nhx-nihaixiahope-tianji-1505", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" },
+        { "source_id": "nhx-finalhopes-ziweidoushu-13", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" }
+      ],
+      "verification_commands": ["npm run validate:nihaixia"],
+      "notes": "格局候选目录只指向主题，不把未授权正文作为规则源。"
+    },
+    {
+      "claim_id": "rule-12-warning-quotes-exact",
+      "claim": "12 条倪师原话警示语必须原文保留，不得替换。",
+      "claim_type": "quote_constraint",
+      "implementation_status": "implemented_and_validated",
+      "primary_sources": [
+        { "source_id": "internal-nihaixia-constraints", "role": "authorized_rule_source", "path": "倪海厦体系约束.md", "notes": "硬约束 H" },
+        { "source_id": "local-code-db-analysis", "role": "knowledge_source", "path": "lib/ziwei/db-analysis.ts" },
+        { "source_id": "local-validation-log", "role": "validation_report", "path": "validation-run.log" }
+      ],
+      "candidate_external_sources": [
+        { "source_id": "nhx-nihaixiahope-tianji-1504", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" },
+        { "source_id": "nhx-finalhopes-ziweidoushu-12", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" },
+        { "source_id": "nhx-nihaixiahope-tianji-1507", "role": "episode_metadata_candidate", "rights_gate": "needs_license_before_quote_or_fulltext" }
+      ],
+      "verification_commands": ["npm run validate:nihaixia"],
+      "notes": "外部页面仅为后续授权后的引用候选；当前 exact quote 合规性由内部约束与代码验证。"
+    }
+  ]
+}

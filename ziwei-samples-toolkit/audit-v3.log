@@ -1,0 +1,66 @@
+
+> ziwei-samples-toolkit@1.0.0 audit:samples
+> tsx scripts/audit-samples.ts
+
+全样本 v3 审计报告
+========================================================================
+分片数：720/720
+样本总数：518400/518400
+唯一出生组合：518400/518400
+重复出生组合：0
+缺失出生组合：0
+每分片行数异常：0
+daXians[0] 含 siHua：0/518400 (0.00%)
+任一 daXian 含 siHua：0/518400 (0.00%)
+daXians[0] 含 stemIndex：0/518400 (0.00%)
+任一 daXian 含 stemIndex：0/518400 (0.00%)
+含 palace.selfSihua 的样本：0/518400 (0.00%)
+palace.selfSihua 字段总数：0
+含 star.incomingSihua 的样本：0/518400 (0.00%)
+star.incomingSihua 字段总数：0
+overview 禁用字眼命中：0/518400 (0.00%)
+health 含「肝/肾/脾胃」：518400/518400 (100.00%)
+health 含任一脏腑/经络词：518400/518400 (100.00%)
+health 含「子午流注」且含「经络」：518400/518400 (100.00%)
+女命 health 含「妇科/经期/孕产」：259200/259200 (100.00%)
+男女命 wealth 配对不同：259200/259200 (100.00%)
+topic 文本长度：min=737, max=3402, avg=1621.7
+
+随机 20 条抽查：
+01. year-1944/1944-02.jsonl.gz:647 1944-02-27 h11 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+02. year-1926/1926-12.jsonl.gz:504 1926-12-21 h11 female | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=OK
+03. year-1943/1943-12.jsonl.gz:94 1943-12-04 h10 female | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=OK
+04. year-1976/1976-11.jsonl.gz:451 1976-11-19 h9 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+05. year-1941/1941-11.jsonl.gz:76 1941-11-04 h1 female | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=OK
+06. year-1932/1932-08.jsonl.gz:239 1932-08-10 h11 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+07. year-1979/1979-05.jsonl.gz:136 1979-05-06 h7 female | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=OK
+08. year-1978/1978-05.jsonl.gz:549 1978-05-23 h10 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+09. year-1941/1941-08.jsonl.gz:663 1941-08-28 h7 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+10. year-1970/1970-09.jsonl.gz:499 1970-09-21 h9 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+11. year-1966/1966-11.jsonl.gz:594 1966-11-25 h8 female | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=OK
+12. year-1926/1926-06.jsonl.gz:131 1926-06-06 h5 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+13. year-1948/1948-01.jsonl.gz:134 1948-01-06 h6 female | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=OK
+14. year-1935/1935-06.jsonl.gz:17 1935-06-01 h8 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+15. year-1980/1980-06.jsonl.gz:41 1980-06-02 h8 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+16. year-1970/1970-10.jsonl.gz:594 1970-10-25 h8 female | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=OK
+17. year-1944/1944-05.jsonl.gz:643 1944-05-27 h9 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+18. year-1949/1949-06.jsonl.gz:401 1949-06-17 h8 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+19. year-1955/1955-08.jsonl.gz:245 1955-08-11 h2 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+20. year-1939/1939-03.jsonl.gz:67 1939-03-03 h9 male | dx0.siHua=OK | dx0.stemIndex=OK | palace.selfSihua=0 | star.incomingSihua=0 | overview禁词=OK | health肝肾脾胃=OK | 女命健康=N/A
+
+12 条警示语在全样本 topics 中的命中样本数：
+- 紫微守命，贵而不富，需禄配合方全美: 50538
+- 空宫必借对宫论事: 85236
+- 化忌主是非: 38072
+- 魁钺夹命，贵人在旁: 17292
+- 羊陀夹命，刑克逃不掉: 43200
+- 火铃夹命，性急刑伤: 10812
+- 禄马交驰，财从动中来: 81842
+- 田宅化忌，家破财散: 518400
+- 福德宫化忌，夫妻宫未见生离，必定死别: 518400
+- 迁移化忌，半空折翅: 33312
+- 擎羊入命，刑克自伤: 43200
+- 命运不是人生的全部，加上地理位置和人念，才是: 518400
+
+失败数：0
+警告数：0

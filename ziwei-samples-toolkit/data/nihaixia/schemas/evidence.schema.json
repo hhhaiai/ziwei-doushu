@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/nihaixia/evidence.schema.json",
+  "title": "NihaixiaEvidenceMap",
+  "type": "object",
+  "required": ["version", "generated_at", "claims"],
+  "properties": {
+    "version": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "claim",
+          "claim_type",
+          "implementation_status",
+          "primary_sources",
+          "candidate_external_sources",
+          "verification_commands"
+        ],
+        "properties": {
+          "claim_id": { "type": "string" },
+          "claim": { "type": "string" },
+          "claim_type": { "type": "string" },
+          "implementation_status": { "type": "string" },
+          "primary_sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source_id", "role"],
+              "properties": {
+                "source_id": { "type": "string" },
+                "role": { "type": "string" },
+                "path": { "type": "string" },
+                "notes": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "candidate_external_sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source_id", "role", "rights_gate"],
+              "properties": {
+                "source_id": { "type": "string" },
+                "role": { "type": "string" },
+                "rights_gate": { "type": "string" },
+                "notes": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          },
+          "verification_commands": { "type": "array", "items": { "type": "string" } },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

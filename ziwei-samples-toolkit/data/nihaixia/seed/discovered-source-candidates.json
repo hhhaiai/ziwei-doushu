@@ -1,0 +1,976 @@
+[
+  {
+    "source_id": "nhx-ganjingworld-tianji-renji-p2",
+    "title": "〖倪海厦〗天纪人纪（全73讲）P2：天纪（二）紫微斗数",
+    "url": "https://www.ganjingworld.com/video/1ic56sj2970HITupujZ9J5thE1fi1c",
+    "platform": "ganjingworld.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "video",
+      "renji"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Gan Jing World uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-video",
+    "notes": "搜索结果显示为全73讲中的第02讲，主题含紫微斗数十二命宫与易经64卦；音视频不得下载。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-ziwei-subtitle-edition",
+    "title": "天纪紫微斗数，倪海厦亲授字幕版",
+    "url": "https://www.bilibili.com/video/BV1GdK3eoEPH/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "video",
+      "subtitle"
+    ],
+    "rights_status": "prohibited",
+    "storage_policy": "do_not_store",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "rejected",
+    "risk_level": "blocked",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-video",
+    "notes": "2026-04-24 自动抓取 title 返回“视频去哪了呢？”，判定为不可用候选；只保留 blocked metadata，禁止进入证据库。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-ziwei-83",
+    "title": "〖天纪〗倪海厦紫微斗数全讲（83集）",
+    "url": "https://www.bilibili.com/video/BV1y976zJE32/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "video",
+      "course_collection"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-video",
+    "notes": "搜索结果标注 83 集合集；未授权前不得抓字幕或下载。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-ziwei-complete-bv1fb",
+    "title": "〖天纪|全集〗倪海厦紫微斗数视频教程全集",
+    "url": "https://www.bilibili.com/video/BV1FBjMz7ENj/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "video",
+      "course_collection"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-video",
+    "notes": "Bilibili 全集候选；只登记 metadata。"
+  },
+  {
+    "source_id": "nhx-bilibili-ziwei-episode-1-bv1hr",
+    "title": "《紫微斗数》第1集《天纪》倪海厦全集高清完整版",
+    "url": "https://www.bilibili.com/video/BV1HrELzLEqs/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "video",
+      "episode"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-video",
+    "notes": "第1集/全集入口候选；可用于人工确认目录，不保存字幕。"
+  },
+  {
+    "source_id": "nhx-bilibili-search-tianji-ziwei",
+    "title": "Bilibili 搜索：倪海厦_天纪_紫微斗数",
+    "url": "https://search.bilibili.com/all?keyword=%E5%80%AA%E6%B5%B7%E5%8E%A6_%E5%A4%A9%E7%BA%AA_%E7%B4%AB%E5%BE%AE%E6%96%97%E6%95%B0",
+    "platform": "bilibili.com",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "search_seed",
+      "bilibili"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "Bilibili",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-bilibili",
+    "notes": "平台搜索入口；用于后续人工/授权流程定位更多 BV 页面。"
+  },
+  {
+    "source_id": "nhx-ixigua-tianji-overview",
+    "title": "《天纪》倪海厦：涵盖紫微斗数、风水",
+    "url": "https://m.ixigua.com/video/7342851486520771072",
+    "platform": "ixigua.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "fengshui",
+      "video"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Xigua uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xigua-douyin",
+    "notes": "西瓜视频候选；只登记 URL 与 metadata。"
+  },
+  {
+    "source_id": "nhx-ixigua-ziwei-16-san-fang-si-zheng",
+    "title": "《天纪》紫微斗数16：三方四正、命盘十二宫",
+    "url": "https://m.ixigua.com/video/7342483308163465755",
+    "platform": "ixigua.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "san_fang_si_zheng",
+      "video"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Xigua uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xigua-douyin",
+    "notes": "主题命中三方四正与十二宫；未授权前不得下载。"
+  },
+  {
+    "source_id": "nhx-douyin-jingxuan-tianji-11",
+    "title": "天纪11倪海厦紫微斗数 - 抖音精选",
+    "url": "https://jingxuan.douyin.com/m/video/7411166984320060723",
+    "platform": "douyin.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "short_video"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Douyin uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xigua-douyin",
+    "notes": "抖音精选候选；短视频只做线索，不入库音视频。"
+  },
+  {
+    "source_id": "nhx-douyin-jingxuan-ziwei-topic",
+    "title": "#紫微斗数 #天纪 #倪海厦天纪 短视频候选",
+    "url": "https://jingxuan.douyin.com/m/video/7551803094947138873",
+    "platform": "douyin.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "short_video",
+      "topic_clip"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Douyin uploader",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xigua-douyin",
+    "notes": "搜索结果包含大运、流年、流月等论法片段；需人工确认来源与授权。"
+  },
+  {
+    "source_id": "nhx-woniuapp-tianji-video-03",
+    "title": "倪海厦天纪周易全解第3集：为什么要讲紫微斗数",
+    "url": "https://www.woniuapp.cn/videos/1/3.html",
+    "platform": "woniuapp.cn",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "video",
+      "yijing"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "woniuapp.cn",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-english-context",
+    "notes": "搜索结果显示该页含视频与文字摘要；按第三方转载处理。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-tianji-index",
+    "title": "倪海厦天纪：紫微斗数、六壬法、金钱卦、风水实战",
+    "url": "https://www.nihaixiahope.com/tianji/",
+    "platform": "nihaixiahope.com",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "liuren",
+      "fengshui"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "专题入口，可作为人工标注目录源；正文全文需授权。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-baby-selector",
+    "title": "倪海厦天纪预产期择日吉时查询",
+    "url": "https://www.nihaixiahope.com/baby.php",
+    "platform": "nihaixiahope.com",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "application",
+      "birth_time"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "现代应用页，宣称依据倪海厦天纪紫微斗数理论；作为应用参考，不作为原典证据。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-tianji-1493",
+    "title": "倪海厦天纪视频紫微斗数1文字版：天纪就是自然法则",
+    "url": "https://www.nihaixiahope.com/tianji/1493.html",
+    "platform": "nihaixiahope.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "文字版候选；仅登记 metadata，禁止直接全文入库。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-tianji-1494",
+    "title": "倪海厦天纪02文字版本：天文与易经八卦",
+    "url": "https://www.nihaixiahope.com/tianji/1494.html",
+    "platform": "nihaixiahope.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "yijing"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "搜索结果命中紫微斗数排盘、年干支等内容；全文需授权。 nihaixiahope 单篇页面自动 title 抓取偶发超时，改为人工 URL 核验。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-tianji-1496",
+    "title": "倪海厦天纪04紫微斗数：南斗星系七杀、破军、贪狼",
+    "url": "https://www.nihaixiahope.com/tianji/1496.html",
+    "platform": "nihaixiahope.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "sha_po_lang"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "星系论述文字版候选；只做线索。 nihaixiahope 单篇页面自动 title 抓取偶发超时，改为人工 URL 核验。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-tianji-1497",
+    "title": "倪海厦天纪05紫微斗数：十二张案例讲义",
+    "url": "https://www.nihaixiahope.com/tianji/1497.html",
+    "platform": "nihaixiahope.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "case_study"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "案例讲义文字版候选；涉及案例证据，需人工审查。 nihaixiahope 单篇页面自动 title 抓取偶发超时，改为人工 URL 核验。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-tianji-1498",
+    "title": "倪海厦天纪06紫微斗数：紫微星在丑宫",
+    "url": "https://www.nihaixiahope.com/tianji/1498.html",
+    "platform": "nihaixiahope.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "ziwei_star"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "紫微星落宫文字版候选；只保存 metadata。 nihaixiahope 单篇页面自动 title 抓取偶发超时，改为人工 URL 核验。"
+  },
+  {
+    "source_id": "nhx-finalhopes-ziweidoushu-03",
+    "title": "倪海厦天纪视频紫微斗数3文字版：四化科权禄忌",
+    "url": "http://www.finalhopes.com/tianji/ziweidoushu03.html",
+    "platform": "finalhopes.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "sihua",
+      "transcript_candidate"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "finalhopes.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-finalhopes",
+    "notes": "搜索结果明确命中四化主题；后续可做人工摘录许可审查。2026-04-24 自动核验：HTTP HEAD 返回 200，但正文 title 抓取偶发超时，保留为人工核验线索。"
+  },
+  {
+    "source_id": "nhx-finalhopes-blog-690",
+    "title": "倪海厦天纪启蒙算命师傅-弘益紫微斗数",
+    "url": "http://www.finalhopes.com/blog/690.html",
+    "platform": "finalhopes.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "study_note",
+      "five_tiger"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "finalhopes.com",
+    "author_or_speaker": "弘益紫微斗数",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-finalhopes",
+    "notes": "搜索结果含五虎遁、命盘三盘等学习笔记；不是倪师原文，需区分二手解释。页面 title 抓取偶发超时，改为人工 URL 核验。"
+  },
+  {
+    "source_id": "nhx-csdn-tianji-doushu-intro",
+    "title": "倪师学习笔记-天纪-斗数简介",
+    "url": "https://blog.csdn.net/sgliquangang/article/details/142823973",
+    "platform": "blog.csdn.net",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "study_note",
+      "health_mapping"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "CSDN blogger",
+    "author_or_speaker": "sgliquangang",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-nihaixiahope",
+    "notes": "搜索结果显示含十二宫体内脏腑映射；需核验页面许可和作者授权。"
+  },
+  {
+    "source_id": "nhx-renrendoc-tianji-lecture",
+    "title": "倪海厦《天纪》讲义",
+    "url": "https://www.renrendoc.com/paper/217203981.html",
+    "platform": "renrendoc.com",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "lecture_note",
+      "pdf_candidate"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "renrendoc.com uploader",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-renrendoc",
+    "notes": "讲义转载候选，命中夹格、禄马交驰等关键词；高风险，禁止全文入库。"
+  },
+  {
+    "source_id": "nhx-pdfcoffee-tianji-tianjidao",
+    "title": "倪海厦 天纪 天机道 PDF",
+    "url": "https://pdfcoffee.com/-pdf-4299-pdf-free.html",
+    "platform": "pdfcoffee.com",
+    "media_type": "pdf",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "pdf_candidate",
+      "tianjidao"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "PDFCoffee uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-pdf",
+    "notes": "PDF 聚合站候选；不得下载或全文索引。"
+  },
+  {
+    "source_id": "nhx-ynhugo-github-tianjidao-pdf",
+    "title": "天机道-倪海厦 PDF",
+    "url": "https://ynhugo.github.io/book/%E5%80%AA%E6%B5%B7%E5%8E%A6/%E5%A4%A9%E6%9C%BA%E9%81%93-%E5%80%AA%E6%B5%B7%E5%8E%A6.pdf",
+    "platform": "ynhugo.github.io",
+    "media_type": "pdf",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "pdf_candidate",
+      "tianjidao"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "GitHub Pages uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-pdf",
+    "notes": "GitHub Pages PDF 候选；仅保存链接。"
+  },
+  {
+    "source_id": "nhx-nihaixiahope-dimaidao-pdf",
+    "title": "天纪地脉道 PDF",
+    "url": "https://nihaixiahope.com/kanyu/dimaidao.pdf",
+    "platform": "nihaixiahope.com",
+    "media_type": "pdf",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "dimaidao",
+      "fengshui",
+      "pdf_candidate"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "nihaixiahope.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-pdf",
+    "notes": "地脉道 PDF 候选，偏风水地理；可支撑天地人体系目录，但不可全文入库。"
+  },
+  {
+    "source_id": "nhx-finalhopes-dimaidao-pdf",
+    "title": "地脉道 PDF - finalhopes",
+    "url": "https://www.finalhopes.com/kanyu/dimaidao.pdf",
+    "platform": "finalhopes.com",
+    "media_type": "pdf",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "dimaidao",
+      "fengshui",
+      "pdf_candidate"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "finalhopes.com",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-finalhopes",
+    "notes": "与 nihaixiahope 地脉道 PDF 可能重复，保留为镜像线索但不得下载。"
+  },
+  {
+    "source_id": "nhx-fengshui86-wenji-pdf",
+    "title": "倪海厦文集 PDF 候选",
+    "url": "https://pdf.fengshui86.com/zydow/5640194.pdf",
+    "platform": "fengshui86.com",
+    "media_type": "pdf",
+    "topic_tags": [
+      "nihaixia",
+      "wenji",
+      "pdf_candidate",
+      "ziwei"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "fengshui86.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-pdf",
+    "notes": "文集 PDF 候选，搜索摘要提到紫微斗数等；高风险。"
+  },
+  {
+    "source_id": "tianji-pro-app-install-guide",
+    "title": "天纪排盘 App 软件安装指导说明书",
+    "url": "https://image.tianji.pro/app/version/%E5%A4%A9%E7%BA%AA%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E6%8C%87%E5%AF%BC%E8%AF%B4%E6%98%8E1.0.1.pdf",
+    "platform": "tianji.pro",
+    "media_type": "pdf",
+    "topic_tags": [
+      "ziwei",
+      "tianji",
+      "app",
+      "software",
+      "reference"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "紫微斗数天纪",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-pdf",
+    "notes": "现代排盘软件说明书，可用于竞品/工具参考；不是倪师原典。"
+  },
+  {
+    "source_id": "nhx-searchchina-nihaixia-site-index",
+    "title": "SearchChina：Ni Haixia Tianji/Renji 网站索引",
+    "url": "https://www.searchchina.net/siteweb/674b113ebb736714d6afbb23",
+    "platform": "searchchina.net",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "renji",
+      "site_index",
+      "english"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "searchchina.net",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-english-context",
+    "notes": "英文索引页，标注 Ni Haixia Tianji Zi Wei Dou Shu 等关键词；仅作发现入口。"
+  },
+  {
+    "source_id": "nhx-oreateai-tianji-study-note-ziwei-yin",
+    "title": "Ni Haixia's Tianji Study Notes: Zi Wei in Yin Palace",
+    "url": "https://www.oreateai.com/blog/ni-haixias-tianji-study-notes-analysis-of-the-destiny-pattern-with-zi-wei-in-the-yin-palace/7689b2e6fbbb949f1436a86ba7f50d7b",
+    "platform": "oreateai.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "english",
+      "study_note"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "Oreate AI Blog",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-english-context",
+    "notes": "英文二手学习笔记；可用于跨语言术语对照，不作为倪师原话证据。"
+  },
+  {
+    "source_id": "wiki-nihaixia",
+    "title": "倪海廈 - Wikipedia",
+    "url": "https://zh.wikipedia.org/wiki/%E5%80%AA%E6%B5%B7%E5%BB%88",
+    "platform": "wikipedia.org",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "biography",
+      "reference"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "Wikipedia contributors",
+    "author_or_speaker": "Wikipedia contributors",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-english-context",
+    "notes": "背景资料，搜索结果提到其早期教授紫微斗数、阳宅风水及天纪；事实需交叉验证。本机 fetch Wikipedia 超时，保留 metadata-only。"
+  },
+  {
+    "source_id": "wiki-ziwei-doushu",
+    "title": "紫微斗数 - Wikipedia",
+    "url": "https://zh.wikipedia.org/wiki/%E7%B4%AB%E5%BE%AE%E6%96%97%E6%95%B0",
+    "platform": "wikipedia.org",
+    "media_type": "webpage",
+    "topic_tags": [
+      "ziwei",
+      "reference",
+      "background"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "Wikipedia contributors",
+    "author_or_speaker": "Wikipedia contributors",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-english-context",
+    "notes": "紫微斗数背景知识入口；不能替代倪海厦体系证据。本机 fetch Wikipedia 超时，保留 metadata-only。"
+  },
+  {
+    "source_id": "blocked-xbeibeix-video-downloader-bv14a411f7bw",
+    "title": "天纪-倪海厦-精校-字幕版 视频下载器页面",
+    "url": "https://xbeibeix.com/video/BV14a411f7BW",
+    "platform": "xbeibeix.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "blocked",
+      "downloader"
+    ],
+    "rights_status": "prohibited",
+    "storage_policy": "do_not_store",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "rejected",
+    "risk_level": "blocked",
+    "publisher": "xbeibeix.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-video",
+    "notes": "视频下载器页面，仅作为反面风险线索登记；不得访问下载按钮、不得下载。"
+  },
+  {
+    "source_id": "blocked-zhsby-nihaixia-resource-bundle",
+    "title": "倪海厦天纪资料合集资源站页面",
+    "url": "https://www.zhsby.cn/697.html",
+    "platform": "zhsby.cn",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "resource_bundle",
+      "blocked"
+    ],
+    "rights_status": "prohibited",
+    "storage_policy": "do_not_store",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "rejected",
+    "risk_level": "blocked",
+    "publisher": "zhsby.cn",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-video",
+    "notes": "资源合集/下载性质高风险，登记为禁止来源，避免后续误采。"
+  }
+]

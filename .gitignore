@@ -53,6 +53,5 @@ coverage/
 *.tgz
 
 # Samples toolkit (large data)
-ziwei-samples-toolkit/
 ziwei-samples-toolkit-v3-full.zip
 .omx/

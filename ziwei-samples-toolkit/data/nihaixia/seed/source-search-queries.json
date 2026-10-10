@@ -1,0 +1,275 @@
+[
+  {
+    "query_id": "q-nihaixia-tianji-ziwei-video",
+    "query": "倪海厦 天纪 紫微斗数 视频",
+    "purpose": "定位倪海厦《天纪》紫微斗数视频页与合集页",
+    "expected_media_types": ["video", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-nihaixia-tianji-ziwei-transcript",
+    "query": "倪海厦 紫微斗数 文字稿",
+    "purpose": "定位文字稿、学习笔记与可人工复核的文本线索",
+    "expected_media_types": ["article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-nihaixia-tianji-pdf",
+    "query": "倪海厦 天纪 PDF",
+    "purpose": "定位 PDF/讲义候选；默认高风险，只登记 metadata",
+    "expected_media_types": ["pdf", "book"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-nihaixia-tianji-audio",
+    "query": "倪海厦 天纪 音频",
+    "purpose": "定位音频平台与音频合集线索；不得下载音频",
+    "expected_media_types": ["audio", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-site-bilibili",
+    "query": "site:bilibili.com/video 倪海厦 天纪 紫微斗数",
+    "purpose": "定位 Bilibili 上的具体视频 BV 页面",
+    "expected_media_types": ["video"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-site-xigua-douyin",
+    "query": "倪海厦 天纪 紫微斗数 西瓜视频 抖音精选",
+    "purpose": "定位短视频/长视频平台候选页面",
+    "expected_media_types": ["video"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-site-nihaixiahope",
+    "query": "site:nihaixiahope.com 倪海厦 天纪 紫微斗数",
+    "purpose": "定位 nihaixiahope 文字稿、工具与专题页面",
+    "expected_media_types": ["article", "webpage", "pdf"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-finalhopes",
+    "query": "site:finalhopes.com 倪海厦 天纪 紫微斗数",
+    "purpose": "定位 finalhopes 文字稿和专题页面",
+    "expected_media_types": ["article", "webpage", "pdf"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-renrendoc",
+    "query": "site:renrendoc.com 倪海厦 天纪 紫微斗数",
+    "purpose": "定位讲义类文档候选；默认高风险",
+    "expected_media_types": ["webpage", "pdf"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-english-context",
+    "query": "Ni Haixia Tian Ji Zi Wei Dou Shu",
+    "purpose": "定位英文索引、海外转载和跨语言背景资料",
+    "expected_media_types": ["webpage", "article", "video"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-youtube",
+    "query": "site:youtube.com/watch 倪海厦 天纪 紫微斗数",
+    "purpose": "定位 YouTube 视频和播放列表入口；只登记 metadata",
+    "expected_media_types": ["video", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-bilibili-remaster",
+    "query": "倪海厦先生《天纪》高清重置版 Bilibili",
+    "purpose": "定位 Bilibili 高清重置版分集入口",
+    "expected_media_types": ["video"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-audio-qtfm",
+    "query": "倪海厦 天纪 蜻蜓FM 紫微斗数",
+    "purpose": "定位蜻蜓 FM 天纪音频分集入口；不得下载音频",
+    "expected_media_types": ["audio"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-site-shenjige",
+    "query": "site:shenjige.cn 倪海厦 天纪 紫微斗数 文字版",
+    "purpose": "定位神机阁文字稿、PDF 候选与目录线索",
+    "expected_media_types": ["article", "webpage", "pdf"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-sina",
+    "query": "site:blog.sina.com.cn 倪海厦 天纪 紫微斗数",
+    "purpose": "定位新浪博客转载/学习笔记候选",
+    "expected_media_types": ["article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-xiwangzhan",
+    "query": "site:xiwangzhan.com 倪海厦 天纪 紫微斗数",
+    "purpose": "定位希望站文字、工具、二手解读候选",
+    "expected_media_types": ["article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-acfun-dailymotion",
+    "query": "倪海厦 天纪 紫微斗数 AcFun Dailymotion",
+    "purpose": "定位非 B 站视频镜像与海外平台候选；只登记 metadata",
+    "expected_media_types": ["video"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-bio-context",
+    "query": "倪海厦 biography 天纪 紫微斗数",
+    "purpose": "定位传记、背景与体系边界参考资料",
+    "expected_media_types": ["webpage", "article"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-audio-lrts-ximalaya",
+    "query": "倪海厦 天纪 懒人听书 喜马拉雅 小宇宙",
+    "purpose": "定位更多音频平台、播客和专辑页；不得下载音频",
+    "expected_media_types": ["audio", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-hantang-context",
+    "query": "倪海厦 汉唐 天纪 紫微斗数",
+    "purpose": "定位汉唐体系、官方/半官方背景与人物资料",
+    "expected_media_types": ["webpage", "article"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-social-notes",
+    "query": "倪海厦 天纪 紫微斗数 知乎 豆瓣 微博",
+    "purpose": "定位社交平台学习笔记和引用线索；不作为原典证据",
+    "expected_media_types": ["article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-resource-risk",
+    "query": "倪海厦 天纪 百度网盘 阿里云盘 夸克网盘 资源",
+    "purpose": "定位资源站/网盘风险页并显式阻断，防止误采",
+    "expected_media_types": ["webpage", "archive"],
+    "rights_default": "prohibited"
+  },
+  {
+    "query_id": "q-bilibili-ai-repair",
+    "query": "倪海厦 天纪 AI修复 4K 字幕版 Bilibili",
+    "purpose": "定位 Bilibili AI 修复、4K、字幕版入口；只登记 metadata",
+    "expected_media_types": ["video"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-nihaixia-sihua-huaji",
+    "query": "倪海厦 天纪 紫微斗数 四化 化忌 视频",
+    "purpose": "定位四化、化忌、宫干触发规则相关视频和文字线索",
+    "expected_media_types": ["video", "article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-bilibili-read-and-video",
+    "query": "site:bilibili.com 倪海厦 天纪 紫微斗数 专栏 视频",
+    "purpose": "定位 Bilibili 专栏、视频与分集目录线索",
+    "expected_media_types": ["article", "video", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-bilibili-playlist",
+    "query": "site:bilibili.com/list 倪海厦 天纪 紫微斗数",
+    "purpose": "定位 Bilibili 播放列表入口，便于 episode-level metadata 建模",
+    "expected_media_types": ["webpage", "video"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-bilibili-read-health",
+    "query": "site:bilibili.com/read 倪海厦 紫微斗数 疾厄 脏腑 十二宫",
+    "purpose": "定位疾厄宫、十二宫、脏腑映射相关二手笔记线索",
+    "expected_media_types": ["article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-bilibili-read-case",
+    "query": "site:bilibili.com/read 倪海厦 天纪 紫微斗数 案例",
+    "purpose": "定位 Bilibili 专栏中的天纪分集案例笔记，供人工标注与授权审查",
+    "expected_media_types": ["article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-xigua-daxian",
+    "query": "site:ixigua.com 倪海厦 紫微斗数 大限 流年",
+    "purpose": "定位西瓜视频中大限、流年、流月相关候选视频",
+    "expected_media_types": ["video", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-audio-xiaoyuzhou",
+    "query": "site:xiaoyuzhoufm.com/episode 倪海厦 天纪 紫微斗数",
+    "purpose": "定位小宇宙倪海厦天纪分集音频入口；不得下载音频",
+    "expected_media_types": ["audio", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-nihaixia-case-study",
+    "query": "倪海厦 紫微斗数 案例 命盘",
+    "purpose": "定位倪海厦紫微斗数案例、命盘分析和二手解读线索",
+    "expected_media_types": ["article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-ziwei-case-pdf",
+    "query": "紫微斗数 案例 PDF",
+    "purpose": "定位通用紫微斗数案例 PDF 参考资料；不得混作倪师原典",
+    "expected_media_types": ["pdf", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-ziwei-pdf-reference",
+    "query": "紫微斗数 PDF 讲义 参考",
+    "purpose": "定位通用紫微斗数 PDF/讲义参考资料，用于术语对照和风险隔离",
+    "expected_media_types": ["pdf", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-site-haokan-sohu-youku-iqiyi",
+    "query": "倪海厦 天纪 紫微斗数 好看视频 搜狐视频 优酷 爱奇艺",
+    "purpose": "定位更多长视频平台的天纪/紫微斗数候选入口；只登记 metadata",
+    "expected_media_types": ["video", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-site-hantang-official",
+    "query": "site:hantang.org.cn 倪海厦 天纪 紫微斗数 版权所有",
+    "purpose": "定位汉唐/支援网站的版权、背景和天纪入口，作为权利与授权联系线索",
+    "expected_media_types": ["official_policy", "webpage", "video"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-site-woniuapp-tianji-episodes",
+    "query": "site:woniuapp.cn/videos/1 倪海厦天纪周易全解 紫微斗数 四化 化忌",
+    "purpose": "定位 woniuapp 天纪分集入口，建立 episode-level metadata 候选；不下载媒体",
+    "expected_media_types": ["video", "webpage"],
+    "rights_default": "needs_license"
+  },
+  {
+    "query_id": "q-core-rule-da-xian-liu-nian",
+    "query": "倪海厦 紫微斗数 大限 流年 流月 宫干 四化",
+    "purpose": "补强大限、流年、流月和宫干四化规则证据候选",
+    "expected_media_types": ["video", "article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-core-rule-health-ziwu-liuzhu",
+    "query": "倪海厦 紫微斗数 疾厄宫 子午流注 脏腑 经络",
+    "purpose": "补强疾厄宫、子午流注、脏腑经络映射证据候选",
+    "expected_media_types": ["video", "article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  },
+  {
+    "query_id": "q-core-warning-phrases",
+    "query": "倪海厦 紫微斗数 魁钺夹命 田宅化忌 福德宫化忌 迁移化忌",
+    "purpose": "补强 12 条警示语和 22 格局相关出处候选",
+    "expected_media_types": ["video", "article", "webpage"],
+    "rights_default": "metadata_only_until_review"
+  }
+]

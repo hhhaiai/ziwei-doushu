@@ -1,0 +1,1174 @@
+[
+  {
+    "source_id": "nhx-youtube-search-tianji-ziwei",
+    "title": "YouTube 搜索：倪海厦 天纪 紫微斗数",
+    "url": "https://www.youtube.com/results?search_query=%E5%80%AA%E6%B5%B7%E5%8E%A6+%E5%A4%A9%E7%BA%AA+%E7%B4%AB%E5%BE%AE%E6%96%97%E6%95%B0",
+    "platform": "youtube.com",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "youtube",
+      "search_seed"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "YouTube",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-youtube",
+    "notes": "YouTube 搜索入口，用于后续通过官方 API 或人工授权流程定位具体视频；不得下载视频或字幕。"
+  },
+  {
+    "source_id": "nhx-youtube-search-nihaixia-tianji",
+    "title": "YouTube 搜索：Ni Haixia Tian Ji Zi Wei Dou Shu",
+    "url": "https://www.youtube.com/results?search_query=Ni+Haixia+Tian+Ji+Zi+Wei+Dou+Shu",
+    "platform": "youtube.com",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "youtube",
+      "english",
+      "search_seed"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "YouTube",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-youtube",
+    "notes": "英文/拼音检索入口；后续必须走 YouTube API/授权边界。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-remaster-01-bv17v",
+    "title": "高清重置版：倪海厦先生《天纪》第一集",
+    "url": "https://www.bilibili.com/video/BV17V411K7gG/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "bilibili",
+      "remaster"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bilibili-remaster",
+    "notes": "高清重置版分集候选；只登记 metadata。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-remaster-07-bv15p",
+    "title": "高清重置版：倪海厦先生《天纪》第七集",
+    "url": "https://www.bilibili.com/video/BV15P411C7S6/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "bilibili",
+      "remaster"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bilibili-remaster",
+    "notes": "高清重置版分集候选；搜索摘要命中象数运用。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-remaster-10-bv1kv",
+    "title": "高清重置版：倪海厦先生《天纪》第十集",
+    "url": "https://www.bilibili.com/video/BV1KV41157yQ/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "bilibili",
+      "remaster"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bilibili-remaster",
+    "notes": "高清重置版分集候选；只登记 metadata。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-05-bv1bv",
+    "title": "高清重置版：倪海厦先生《天纪》第五集",
+    "url": "https://www.bilibili.com/video/BV1bV411e79v/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "bilibili",
+      "remaster"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bilibili-remaster",
+    "notes": "天纪第五集视频候选；未授权前不抓字幕。"
+  },
+  {
+    "source_id": "nhx-bilibili-tianji-06-bv15b",
+    "title": "高清重置版：倪海厦先生《天纪》第六集",
+    "url": "https://www.bilibili.com/video/BV15b4y1X7eV/",
+    "platform": "bilibili.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "bilibili",
+      "remaster"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Bilibili uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bilibili-remaster",
+    "notes": "天纪第六集视频候选；未授权前不抓字幕。"
+  },
+  {
+    "source_id": "nhx-acfun-tianji-54",
+    "title": "倪海厦《天纪》54",
+    "url": "https://m.acfun.cn/v/?ac=35921049",
+    "platform": "acfun.cn",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "acfun"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "AcFun uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-acfun-dailymotion",
+    "notes": "AcFun 分集候选；只登记 metadata。"
+  },
+  {
+    "source_id": "nhx-dailymotion-tianji-lesson-5",
+    "title": "倪海厦《天纪》第5课",
+    "url": "https://www.dailymotion.com/video/x8leyhn",
+    "platform": "dailymotion.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "dailymotion"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Dailymotion uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-acfun-dailymotion",
+    "notes": "Dailymotion 候选视频；不得下载。"
+  },
+  {
+    "source_id": "nhx-dailymotion-tianji-lesson-6",
+    "title": "倪海厦《天纪》第6课",
+    "url": "https://www.dailymotion.com/video/x8leyho",
+    "platform": "dailymotion.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "video",
+      "dailymotion"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Dailymotion uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-acfun-dailymotion",
+    "notes": "Dailymotion 候选视频；不得下载。"
+  },
+  {
+    "source_id": "nhx-dayouguoxue-tianji-subtitle-course",
+    "title": "倪海厦天纪视频字幕版全集候选",
+    "url": "https://dayouguoxue.com/6521/",
+    "platform": "dayouguoxue.com",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "subtitle",
+      "course"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "dayouguoxue.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-transcript",
+    "notes": "搜索结果显示为视频字幕版全集候选；可能含下载/课程内容，高风险，只登记 metadata。 2026-04-24 自动核验：HTTPS 连接失败、HTTP 返回 404，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianji-01",
+    "title": "天纪文字版 01：天纪就是自然法则",
+    "url": "https://www.shenjige.cn/details/Fc1HCZn9l.html",
+    "platform": "shenjige.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "transcript_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "神机阁",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "文字稿候选；不得全文入库。 2026-04-24 自动核验：站点返回 403/超时，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianji-02a",
+    "title": "天纪文字版 02-1：天文与易经八卦",
+    "url": "https://www.shenjige.cn/details/ETmPqS1mx.html",
+    "platform": "shenjige.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "transcript_candidate",
+      "yijing",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "神机阁",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "文字稿候选；不得全文入库。 2026-04-24 自动核验：站点返回 403/超时，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianji-02b",
+    "title": "天纪文字版 02-2：天文与易经八卦",
+    "url": "https://www.shenjige.cn/details/4aN8qEpRq.html",
+    "platform": "shenjige.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "transcript_candidate",
+      "yijing",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "神机阁",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "文字稿候选；不得全文入库。 2026-04-24 自动核验：站点返回 403/超时，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianji-07",
+    "title": "天纪文字版 07-1：紫微星在寅宫",
+    "url": "https://www.shenjige.cn/details/0RJEXPzMb.html",
+    "platform": "shenjige.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "神机阁",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "紫微星落宫文字稿候选；不得全文入库。 2026-04-24 自动核验：站点返回 403/超时，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianji-08",
+    "title": "天纪文字版 08-5：紫微星在卯宫",
+    "url": "https://www.shenjige.cn/details/0DhkwMhCM.html",
+    "platform": "shenjige.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "神机阁",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "紫微星落宫文字稿候选；不得全文入库。 2026-04-24 自动核验：站点返回 403/超时，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianji-09",
+    "title": "天纪文字版 09-3：紫微星在辰宫",
+    "url": "https://www.shenjige.cn/details/O4GmiZ1-A.html",
+    "platform": "shenjige.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "神机阁",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "紫微星落宫文字稿候选；不得全文入库。 2026-04-24 自动核验：站点返回 403/超时，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianji-10",
+    "title": "天纪文字版 10：紫微星在巳宫",
+    "url": "https://www.shenjige.cn/details/4Lk26VoWF.html",
+    "platform": "shenjige.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "transcript_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "神机阁",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "紫微星落宫文字稿候选；不得全文入库。 2026-04-24 自动核验：站点返回 403/超时，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-shenjige-tianjidao-pdf",
+    "title": "天机道 PDF 候选 - 神机阁",
+    "url": "https://www.shenjige.cn/details/-T8BWTz7q.html",
+    "platform": "shenjige.cn",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "pdf_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "神机阁",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "PDF 候选页；禁止下载或全文索引。"
+  },
+  {
+    "source_id": "nhx-shenjige-dimaidao-pdf",
+    "title": "地脉道 PDF 候选 - 神机阁",
+    "url": "https://www.shenjige.cn/details/eMv2S322v.html",
+    "platform": "shenjige.cn",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "dimaidao",
+      "fengshui",
+      "pdf_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "神机阁",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "地脉道 PDF 候选页；只做天地人体系目录线索。"
+  },
+  {
+    "source_id": "nhx-shenjige-renjiandao-pdf",
+    "title": "人间道 PDF 候选 - 神机阁",
+    "url": "https://www.shenjige.cn/details/9y4LxEBsx.html",
+    "platform": "shenjige.cn",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "renjiandao",
+      "pdf_candidate",
+      "shenjige"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "神机阁",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-shenjige",
+    "notes": "人间道 PDF 候选页；只做体系边界线索。"
+  },
+  {
+    "source_id": "nhx-sina-tianji-04",
+    "title": "倪海厦天纪 04 新浪博客候选",
+    "url": "https://blog.sina.com.cn/s/blog_62b00fba0102yx1r.html",
+    "platform": "sina.com.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "blog",
+      "study_note"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "Sina Blog",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-sina",
+    "notes": "新浪博客转载/学习笔记候选；不得全文入库。 2026-04-24 自动核验：Sina 返回 418，疑似反爬，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-sina-tianji-05",
+    "title": "倪海厦天纪 05 新浪博客候选",
+    "url": "https://blog.sina.com.cn/s/blog_843be5700102xdhe.html",
+    "platform": "sina.com.cn",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "blog",
+      "study_note"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "Sina Blog",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-sina",
+    "notes": "新浪博客转载/学习笔记候选；不得全文入库。 2026-04-24 自动核验：Sina 返回 418，疑似反爬，保留为搜索发现线索，需人工复核。"
+  },
+  {
+    "source_id": "nhx-xiwangzhan-ziwei-caibo",
+    "title": "希望站：倪海厦天纪紫微斗数财帛线索",
+    "url": "https://xiwangzhan.com/8936.html",
+    "platform": "xiwangzhan.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "caibo",
+      "study_note"
+    ],
+    "rights_status": "prohibited",
+    "storage_policy": "do_not_store",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "rejected",
+    "risk_level": "blocked",
+    "publisher": "xiwangzhan.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xiwangzhan",
+    "notes": "二手解读/学习笔记候选；不作为倪师原话证据。 2026-04-24 自动核验：页面返回 404，判定为无效候选；仅保留 blocked metadata 防止重复采集。"
+  },
+  {
+    "source_id": "nhx-xiwangzhan-tianji-tools",
+    "title": "希望站：倪海厦天纪工具/资料线索",
+    "url": "https://xiwangzhan.com/11346.html",
+    "platform": "xiwangzhan.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "tools",
+      "study_note"
+    ],
+    "rights_status": "prohibited",
+    "storage_policy": "do_not_store",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "rejected",
+    "risk_level": "blocked",
+    "publisher": "xiwangzhan.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xiwangzhan",
+    "notes": "工具/资料入口候选；需人工确认。 2026-04-24 自动核验：页面返回 404，判定为无效候选；仅保留 blocked metadata 防止重复采集。后续 title 抓取偶发失败，改为人工 URL 核验。"
+  },
+  {
+    "source_id": "nhx-xiwangzhan-tianji-10",
+    "title": "希望站：倪海厦天纪 10 候选",
+    "url": "https://xiwangzhan.com/5397.html",
+    "platform": "xiwangzhan.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "study_note"
+    ],
+    "rights_status": "prohibited",
+    "storage_policy": "do_not_store",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "rejected",
+    "risk_level": "blocked",
+    "publisher": "xiwangzhan.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xiwangzhan",
+    "notes": "学习笔记/转载候选；不得全文入库。 2026-04-24 自动核验：页面返回 404，判定为无效候选；仅保留 blocked metadata 防止重复采集。"
+  },
+  {
+    "source_id": "nhx-xiwangzhan-tianji-story",
+    "title": "希望站：倪海厦天纪故事/案例线索",
+    "url": "https://xiwangzhan.com/7338.html",
+    "platform": "xiwangzhan.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "case_study",
+      "study_note"
+    ],
+    "rights_status": "prohibited",
+    "storage_policy": "do_not_store",
+    "collection_actions": [
+      "record_metadata",
+      "fetch_public_page_title",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "rejected",
+    "risk_level": "blocked",
+    "publisher": "xiwangzhan.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xiwangzhan",
+    "notes": "故事/案例二手线索；只登记 metadata。 2026-04-24 自动核验：页面返回 404，判定为无效候选；仅保留 blocked metadata 防止重复采集。"
+  },
+  {
+    "source_id": "nhx-tunan-ge-ziwei-face-reading",
+    "title": "倪海厦紫微斗数面相案例候选",
+    "url": "https://tunan-ge.com/2668.html",
+    "platform": "tunan-ge.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "ziwei",
+      "face_reading",
+      "case_study",
+      "study_note"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "medium",
+    "publisher": "tunan-ge.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-ziwei-transcript",
+    "notes": "二手案例线索；不作为原文证据。页面 title 抓取偶发超时，改为人工 URL 核验。"
+  },
+  {
+    "source_id": "nhx-vrd-resource-index",
+    "title": "VR-D 倪海厦资料索引候选",
+    "url": "https://vr-d.com/",
+    "platform": "vr-d.com",
+    "media_type": "archive",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "resource_index",
+      "archive"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "vr-d.com",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-nihaixia-tianji-pdf",
+    "notes": "资料索引/下载风险站点；只做线索登记。"
+  },
+  {
+    "source_id": "nhx-qtfm-tianji-03-old",
+    "title": "蜻蜓 FM：倪海厦《天纪》第3集",
+    "url": "https://www.qtfm.cn/channels/173644/programs/5017323/",
+    "platform": "qtfm.cn",
+    "media_type": "audio",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "audio",
+      "qtfm"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "蜻蜓 FM uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-audio-qtfm",
+    "notes": "音频分集候选；不得下载音频。"
+  },
+  {
+    "source_id": "nhx-qtfm-tianji-05-old",
+    "title": "蜻蜓 FM：倪海厦《天纪》第5集",
+    "url": "https://www.qtfm.cn/channels/173644/programs/5017312/",
+    "platform": "qtfm.cn",
+    "media_type": "audio",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "audio",
+      "qtfm"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "蜻蜓 FM uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-audio-qtfm",
+    "notes": "音频分集候选；不得下载音频。"
+  },
+  {
+    "source_id": "nhx-qtfm-tianji-03-new",
+    "title": "蜻蜓 FM：倪海厦《天纪》天文03",
+    "url": "https://www.qtfm.cn/channels/485080/programs/26921511/",
+    "platform": "qtfm.cn",
+    "media_type": "audio",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "audio",
+      "qtfm"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "蜻蜓 FM uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-audio-qtfm",
+    "notes": "新版音频分集候选；不得下载音频。"
+  },
+  {
+    "source_id": "nhx-qtfm-tianji-02-new",
+    "title": "蜻蜓 FM：倪海厦《天纪》天文02",
+    "url": "https://m.qtfm.cn/vchannels/485080/programs/26921512/",
+    "platform": "qtfm.cn",
+    "media_type": "audio",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "audio",
+      "qtfm"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "蜻蜓 FM uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-audio-qtfm",
+    "notes": "新版音频分集候选；不得下载音频。"
+  },
+  {
+    "source_id": "nhx-qtfm-tianji-06-new",
+    "title": "蜻蜓 FM：倪海厦《天纪》天文06",
+    "url": "https://www.qtfm.cn/channels/485080/programs/26921508/",
+    "platform": "qtfm.cn",
+    "media_type": "audio",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "audio",
+      "qtfm"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "蜻蜓 FM uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-audio-qtfm",
+    "notes": "新版音频分集候选；不得下载音频。"
+  },
+  {
+    "source_id": "nhx-qtfm-tianji-08-new",
+    "title": "蜻蜓 FM：倪海厦《天纪》天文08",
+    "url": "https://m-pre.qingting.fm/vchannels/485080/programs/26921506/",
+    "platform": "qingting.fm",
+    "media_type": "audio",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "audio",
+      "qtfm"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "蜻蜓 FM uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-audio-qtfm",
+    "notes": "新版音频分集候选；不得下载音频。"
+  },
+  {
+    "source_id": "nhx-qtfm-tianji-10-new",
+    "title": "蜻蜓 FM：倪海厦《天纪》天文10",
+    "url": "https://www.qtfm.cn/channels/485080/programs/26921504/",
+    "platform": "qtfm.cn",
+    "media_type": "audio",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "audio",
+      "qtfm"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "蜻蜓 FM uploader",
+    "author_or_speaker": "倪海厦",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-audio-qtfm",
+    "notes": "新版音频分集候选；不得下载音频。"
+  },
+  {
+    "source_id": "nhx-douyin-jingxuan-ziweidoushu-clip-755720",
+    "title": "抖音精选：倪海厦天纪紫微斗数片段",
+    "url": "https://jingxuan.douyin.com/m/video/7557205744526249270",
+    "platform": "douyin.com",
+    "media_type": "video",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "ziwei",
+      "short_video",
+      "douyin"
+    ],
+    "rights_status": "unknown_needs_review",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "manual_rights_review",
+      "request_license",
+      "do_not_download_media",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "needs_license",
+    "risk_level": "high",
+    "publisher": "Douyin uploader",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-site-xigua-douyin",
+    "notes": "抖音短视频候选；只登记 metadata。"
+  },
+  {
+    "source_id": "nhx-inf-news-bio",
+    "title": "Ni Haixia biography/reference candidate - inf.news",
+    "url": "https://inf.news/en/taiwan/9d24de8fcd0676301995871ffed07234.html",
+    "platform": "inf.news",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "biography",
+      "reference",
+      "english"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "inf.news",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bio-context",
+    "notes": "英文背景资料候选；事实需交叉验证，不作为体系规则证据。"
+  },
+  {
+    "source_id": "nhx-min-news-bio",
+    "title": "Ni Haixia biography/reference candidate - min.news",
+    "url": "https://min.news/en/culture/5e327a80364e42df480d3e58e0e159eb.html",
+    "platform": "min.news",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "biography",
+      "reference",
+      "english"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "min.news",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bio-context",
+    "notes": "英文背景资料候选；事实需交叉验证，不作为体系规则证据。"
+  },
+  {
+    "source_id": "nhx-zjra-wenming-bio",
+    "title": "倪海厦人物背景资料候选 - 文明网",
+    "url": "https://zjra.wenming.cn/gdtp/202111/t20211108_7400937.html",
+    "platform": "zjra.wenming.cn",
+    "media_type": "webpage",
+    "topic_tags": [
+      "nihaixia",
+      "biography",
+      "reference"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "zjra.wenming.cn",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-bio-context",
+    "notes": "背景资料候选；只作人物背景索引，事实需交叉验证。"
+  },
+  {
+    "source_id": "nhx-oreateai-tianji-limitations",
+    "title": "Ni Haixia Tianji study note: limitations of fate analysis",
+    "url": "https://www.oreateai.com/blog/ni-haixias-study-notes-on-tianji-the-limitations-of-fate-analysis/0950b7ad7e47506f2ff1cbf313545fd7",
+    "platform": "oreateai.com",
+    "media_type": "article",
+    "topic_tags": [
+      "nihaixia",
+      "tianji",
+      "english",
+      "study_note",
+      "limitations"
+    ],
+    "rights_status": "metadata_only",
+    "storage_policy": "metadata_only",
+    "collection_actions": [
+      "record_metadata",
+      "do_not_store_fulltext"
+    ],
+    "human_review_status": "pending",
+    "risk_level": "medium",
+    "publisher": "Oreate AI Blog",
+    "author_or_speaker": "unknown",
+    "discovered_at": "2026-04-24",
+    "discovered_via": "web_search:q-english-context",
+    "notes": "英文二手学习笔记，适合术语/传播背景参考；不作为倪师原话证据。"
+  }
+]

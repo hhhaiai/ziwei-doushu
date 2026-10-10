@@ -1,0 +1,6 @@
+
+> ziwei-samples-toolkit@1.0.0 validate:nihaixia
+> tsx scripts/validate-nihaixia-constraints.ts
+
+样本扫描通过：518,400 条，720 个分片
+倪海厦体系硬约束校验通过
